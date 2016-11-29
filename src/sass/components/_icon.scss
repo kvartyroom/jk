@@ -1,0 +1,22 @@
+.icon {
+  display: inline-block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  vertical-align: middle;
+  &_size {
+    &_s {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  &_white {
+    fill: #fff;
+  }
+  &_phone {
+    background-image: url('../img/icons/phone.png');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,9 @@
+extends ../components/layout/layout
+block head
+  - var pageTitle = 'Главная';
+  - var pageDescription = ''
+block content
+  +b.page._index
+    include ../components/header/header
+    +e.MAIN.content
+    include ../components/footer/footer

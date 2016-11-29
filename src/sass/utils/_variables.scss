@@ -1,0 +1,27 @@
+@import 'core/settings/setting';
+
+@import 'core/validators/contains';
+
+@import 'core/utils/fetch-default-setting';
+@import 'core/utils/font-source-declaration';
+
+@import 'core/lib/font-face';
+
+@include font-face('PFDinTextPro-Bold', '/fonts/pfdintextpro-bold', $file-formats: woff2 woff ttf);
+@include font-face('PFDinTextPro-Light', '/fonts/pfdintextpro-light', $file-formats: woff2 woff ttf);
+@include font-face('PFDinTextPro-Medium', '/fonts/pfdintextpro-medium', $file-formats: woff2 woff ttf);
+@include font-face('PFDinTextPro-Regular', '/fonts/pfdintextpro-regular', $file-formats: woff2 woff ttf);
+@include font-face('PFDinTextPro-Thin', '/fonts/pfdintextpro-thin', $file-formats: woff2 woff ttf);
+@include font-face('PFDinTextPro-xBlack', '/fonts/pfdintextpro-xblack', $file-formats: woff2 woff ttf);
+@include font-face('PFDinTextPro-xThin', '/fonts/pfdintextpro-xthin', $file-formats: woff2 woff ttf);
+
+$primary-color: #000;
+$secondary-color: #494949;
+
+$body-font-family: 'PFDinTextPro-Regular', sans-serif;
+$body-font-weight: 400;
+$body-font-size: 10px;
+$body-font-color: #000;
+$body-background: #fff;
+
+$link-color: #0093da;

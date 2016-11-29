@@ -1,0 +1,44 @@
+.footer {
+
+  &__wrap {
+    position: relative;
+  }
+  &__button {
+    position: absolute;
+    bottom: 16px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    &_info {
+      left: 16px;
+    }
+    &_heart {
+      right: 16px;
+    }
+  }
+  &__team {
+    &-member {
+      font-family: Helvetica;
+    	font-size: 9px;
+    	font-weight: 300;
+    	font-style: normal;
+    	font-stretch: normal;
+    	line-height: 1.59;
+    	letter-spacing: 0.1px;
+    	text-align: center;
+    	color: #fff;
+    }
+  }
+  &__copyright {
+    font-family: Helvetica;
+  	font-size: 9px;
+  	font-weight: 300;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.59;
+  	letter-spacing: 0.1px;
+  	text-align: center;
+  	color: #fff;
+  }
+}

@@ -1,0 +1,151 @@
+.social-share {
+  &__title {
+  	color: #fff;
+  	letter-spacing: 0.1px;
+  	font-weight: 300;
+  	font-style: normal;
+  	font-stretch: normal;
+  	font-size: 9px;
+  	font-family: Helvetica;
+  	line-height: 1.92;
+    opacity: 0.5;
+  }
+}
+
+.ya-share2 {
+  &__list {
+    margin: 5px 0 25px !important;
+  }
+  &__item {
+    margin: 0 0 0 10px !important;
+  }
+  &__badge {
+    border-radius: 100% !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+    line-height: 22px !important;
+    transition: 0.3s ease;
+    width: 22px;
+    height: 22px;
+
+    &:hover {
+      transform: scale(1.1);
+
+      &::after {
+        transform: scale(0);
+      }
+    }
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      background: #018ecc;
+      content: '';
+      transition: ease 0.3s;
+      transform: scale(0.95);
+    }
+  }
+  .ya-share2__container_size_m {
+    .ya-share2__icon {
+      position: relative;
+      z-index: 1;
+      background-size: contain;
+      vertical-align: middle;
+    }
+    .ya-share2__item_service_twitter {
+      .ya-share2__icon {
+        width: 10px;
+        height: 12px;
+        background: url('../img/icons/socials/twitter.svg') no-repeat;
+      }
+      .ya-share2__badge:hover {
+        .ya-share2__icon {
+          background: url('../img/icons/socials/twitter-hover.svg') no-repeat;
+        }
+      }
+    }
+    .ya-share2__item_service_facebook {
+      .ya-share2__icon {
+        width: 8px;
+        height: 13px;
+        background: url('../img/icons/socials/facebook.svg') no-repeat;
+      }
+      .ya-share2__badge:hover {
+        .ya-share2__icon {
+          background: url('../img/icons/socials/facebook-hover.svg') no-repeat;
+        }
+      }
+    }
+    .ya-share2__item_service_vkontakte {
+      .ya-share2__icon {
+        width: 14px;
+        height: 8px;
+        background: url('../img/icons/socials/vk.svg') no-repeat;
+      }
+      .ya-share2__badge:hover {
+        .ya-share2__icon {
+          background: url('../img/icons/socials/vk-hover.svg') no-repeat;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .social-share {
+    &__title {
+      font-size: 11px;
+      line-height: 1.57;
+    }
+  }
+  .ya-share2 {
+    &__list {
+      margin-top: 9px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .social-share {
+    &__title {
+      font-size: 14px;
+    	line-height: 1.64;
+    }
+  }
+  .ya-share2 {
+    &__list {
+      margin-top: 15px !important;
+    }
+    &__item {
+      margin-left: 12px !important;
+    }
+    &__badge {
+      width: 30px !important;
+      height: 30px !important;
+      line-height: 30px !important;
+    }
+    .ya-share2__container_size_m {
+      .ya-share2__item_service_twitter {
+        .ya-share2__icon {
+          width: 12px;
+          height: 17px;
+        }
+      }
+      .ya-share2__item_service_facebook {
+        .ya-share2__icon {
+          width: 10px;
+          height: 18px;
+        }
+      }
+      .ya-share2__item_service_vkontakte {
+        .ya-share2__icon {
+          width: 20px;
+          height: 11px;
+        }
+      }
+    }
+  }
+
+}

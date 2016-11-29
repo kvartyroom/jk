@@ -1,0 +1,88 @@
+.pane {
+  position: absolute;
+  top: 35px;
+  box-sizing: border-box;
+  padding-top: 34px;
+  width: 50%;
+  height: calc(100% - 35px);
+  background: #fff;
+  z-index: 10;
+
+  &_opened {
+    display: block;
+  }
+  &_closed {
+    display: none;
+  }
+  &_left {
+    left: 0;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      border-right: 1px solid #e9e9e9;
+      content: '';
+    }
+  }
+  &_right {
+    right: 0;
+  }
+  &__bg {
+    position: absolute;
+  }
+  &_test {
+    .pane__wrap {
+      overflow: hidden;
+    }
+    .pane__bg {
+      background-image: url('../img/icons/microscope.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 353px;
+      height: 556px;
+      transform: scaleX(-1);
+      bottom: 0;
+      left: 20px;
+      opacity: 0.09;
+    }
+  }
+  &_cards {
+    &::after {
+      position: fixed;
+      bottom: 0;
+      display: block;
+      width: 50%;
+      height: 209px;
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.17) 40%, rgba(255, 255, 255, 0.3) 43%, #ffffff);
+      content: '';
+      transform: rotate(180deg);
+    }
+  }
+  &_end {
+    &::after {
+      display: none;
+    }
+  }
+  &__wrap {
+    overflow-y: scroll;
+    height: 100%;
+    position: relative;
+  }
+  &__container {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+  }
+  &__close {
+    position: absolute;
+    top: 38px;
+    right: 20px;
+    width: 17px;
+    height: 15px;
+    background-image: url('../img/icons/close.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}

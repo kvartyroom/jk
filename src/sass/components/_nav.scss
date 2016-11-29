@@ -1,0 +1,42 @@
+.nav {
+  position: relative;
+  height: 90px;
+
+  &__logo {
+    position: relative;
+    margin-top: 17px;
+    width: 43px;
+    height: 60px;
+    background-image: url('../img/logos/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: top;
+  }
+  &__title {
+    display: inline-block;
+    margin-top: 26px;
+    margin-left: 20px;
+    max-width: 196px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-size: 17px;
+    font-family: 'PFDinTextPro-Light';
+  }
+  &__left,
+  &__center,
+  &__right {
+    height: 100%;
+  }
+  &__left {
+    float: left;
+  }
+  &__center {
+    float: left;
+  }
+  &__right {
+    float: right;
+  }
+  &__menu {
+    margin-top: 39px;
+  }
+}

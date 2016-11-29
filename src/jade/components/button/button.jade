@@ -1,0 +1,9 @@
+include ../icon/icon
+
+mixin button(isIcon)
+  +b.BUTTON.button&attributes(attributes)
+    if isIcon
+      block
+    else
+      +e.SPAN.text
+        block

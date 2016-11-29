@@ -1,0 +1,3 @@
+@function _fetch-default-setting($setting) {
+  @return map-get(map-merge($_setting-defaults, $gz), $setting);
+}

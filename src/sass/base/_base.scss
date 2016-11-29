@@ -1,0 +1,19 @@
+@import 'utils/variables';
+
+html,
+body {
+  height: 100%;
+  font-size: $body-font-size;
+}
+
+body {
+  background-repeat: repeat;
+  color: $body-font-color;
+  font-weight: $body-font-weight;
+  font-family: $body-font-family;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
