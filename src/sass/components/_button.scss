@@ -1,22 +1,23 @@
 .button {
   touch-action: manipulation;
 
-  &_theme_astellas {
+  &_theme_jk {
     position: relative;
     display: inline-block;
     margin: 0;
     padding: 0;
     outline: 0;
-    border: 0;
+    border: 1px solid #0093da;
     border-radius: 100px;
-    background-color: #018ecc;
-    color: #fff;
+    background-color: #fff;
+    color: #0093da;
     text-align: center;
     white-space: nowrap;
-    font-weight: 300;
+    font-weight: 400;
+    letter-spacing: 0.055em;
     font-style: normal;
   	font-stretch: normal;
-    font-family: 'Helvetica';
+    font-family: 'PFDinTextPro-Thin';
     opacity: 1;
     cursor: pointer;
     transition: opacity 0.3s ease;
@@ -32,19 +33,15 @@
     }
     &.button_size {
       &_s {
-        font-size: 1.2rem;
-
         .button__text {
-          margin: 5px 13px;
+
         }
       }
       &_m {
         font-size: 1.8rem;
-        line-height: 1.8rem;
-
         .button__text {
-          margin: 13px 24px 12px;
-          min-width: 100px;
+          min-width: 210px;
+          margin: 10px 20px;
         }
       }
     }
@@ -54,8 +51,19 @@
         background: none;
       }
       &_action {
-        background: rgba(1, 142, 204, 0.75);
+        background: #0093da;
         color: #fff;
+      }
+      &_white {
+        border-color: white;
+        color: #fff;
+      }
+      &_mult {
+        color: #000;
+        border-color: #000;
+        .part {
+          color: #0093da;
+        }
       }
     }
     &.button_disabled {
@@ -74,37 +82,47 @@
       opacity: 1;
       transition: opacity 0.3s ease;
     }
-  }
-}
 
-@media screen and (min-width: 1400px) {
-  .button {
-    &_theme_astellas {
-      &.button_size {
-        &_m {
-          font-size: 1.8rem;
-          line-height: 2.3rem;
-
-          .button__text {
-            min-width: 121px;
-          }
-        }
+    .button__img {
+      display: inline-block;
+      &_video {
+        background-image: url('../img/icons/player.png');
+        background-repeat: no-repeat;
+        width: 33px;
+        height: 28px;
+      }
+      &_pdf {
+        background-image: url('../img/icons/pdf.png');
+        background-repeat: no-repeat;
+        width: 26px;
+        height: 24px;
       }
     }
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .button {
-    &_theme_astellas {
-      &.button_size {
-        &_m {
-          font-size: 2.2rem;
-          line-height: 3.2rem;
-
-          .button__text {
-            min-width: 166px;
-            letter-spacing: 0.3px;
+    &.button_icon {
+      position: relative;
+      &.button {
+        &_icon_video {
+          &::after {
+            position: absolute;
+            top: 6px;
+            left: 12%;
+            content: '';
+            background-image: url('../img/icons/player.png');
+            background-repeat: no-repeat;
+            width: 33px;
+            height: 28px;
+          }
+        }
+        &_icon_pdf {
+          &::after {
+            position: absolute;
+            top: 6px;
+            left: 12%;
+            content: '';
+            background-image: url('../img/icons/pdf.png');
+            background-repeat: no-repeat;
+            width: 26px;
+            height: 24px;
           }
         }
       }

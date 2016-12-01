@@ -1,3 +1,72 @@
 .section {
+  background: #fff;
+  &__wrap {
+    max-width: 1280px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: 'PFDinTextPro-Regular';
+    letter-spacing: 0.035em;
+    max-width: 520px;
+    margin: 16px auto 10px;
+    text-transform: uppercase;
+    &_v2 {
+      color: #fff;
+    }
+    b {
+      text-transform: lowercase;
+      font-weight: 400;
+    }
+  }
+  &__subtitle {
 
+  }
+  &__text {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 0.055em;
+    font-family: 'PFDinTextPro-Thin';
+    &_complex {
+      max-width: 1184px;
+      margin: 0 auto;
+    }
+  }
+  &__divider {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    background: #ffc300;
+    width: 100px;
+    height: 4px;
+  }
+  &_apartment {
+    position: relative;
+    padding-bottom: 25px;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../img/patterns/pattern.png');
+      background-repeat: repeat-x;
+      background-size: contain;
+      width: 100%;
+      height: 130px;
+      bottom: 0;
+    }
+  }
+  &_deals {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/pages/home/bg-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 26px;
+  }
+  &_complex {
+    padding-bottom: 48px;
+  }
 }

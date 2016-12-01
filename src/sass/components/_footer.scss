@@ -1,44 +1,88 @@
 .footer {
-
+  background: #f9f9f9;
   &__wrap {
     position: relative;
+    padding: 22px 48px;
+    max-width: 1184px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  &__button {
-    position: absolute;
-    bottom: 16px;
-    padding: 0;
-    margin: 0;
-    border: none;
-    background: none;
-    &_info {
-      left: 16px;
-    }
-    &_heart {
-      right: 16px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    color: #0093da;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Regular';
+  }
+  &__title {
+    color: #0093da;
+    letter-spacing: 0.055em;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Regular';
+  }
+  &__address {
+    max-width: 300px;
+    color: #333;
+    letter-spacing: 0.055em;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Thin';
+    span {
+      display: block;
+      color: #0093da;
     }
   }
-  &__team {
-    &-member {
-      font-family: Helvetica;
-    	font-size: 9px;
-    	font-weight: 300;
-    	font-style: normal;
-    	font-stretch: normal;
-    	line-height: 1.59;
-    	letter-spacing: 0.1px;
-    	text-align: center;
-    	color: #fff;
+  &__info {
+    display: inline-block;
+  }
+  &__tel {
+    margin-top: 2px;
+    color: #3a3a3a;
+    text-decoration: none;
+    letter-spacing: 0.025em;
+    font-size: 22px;
+    font-family: 'PFDinTextPro-Regular';
+  }
+  &__schedule {
+    color: #3a3a3a;
+    letter-spacing: 0.025em;
+    font-size: 14px;
+    font-family: 'PFDinTextPro-Light';
+  }
+  &__phone {
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    border-radius: 100%;
+    background: #0093da;
+    text-align: center;
+    line-height: 47px;
+  }
+  &__col {
+
+  }
+  &__fz {
+    text-align: center;
+  }
+  &__fz-doc {
+    margin-top: 8px;
+    display: block;
+    font-size: 18px;
+    color: #333;
+    font-family: 'PFDinTextPro-Light';
+    letter-spacing: 0.055em;
+    span {
+      color: #0093da;
+      font-family: 'PFDinTextPro-Light';
     }
   }
-  &__copyright {
-    font-family: Helvetica;
-  	font-size: 9px;
-  	font-weight: 300;
-  	font-style: normal;
-  	font-stretch: normal;
-  	line-height: 1.59;
-  	letter-spacing: 0.1px;
-  	text-align: center;
-  	color: #fff;
+  &__rating.button_theme_jk {
+    span.button__text {
+      margin: 8px 20px;
+      min-width: 130px;
+    }
   }
 }

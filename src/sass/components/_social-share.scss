@@ -1,14 +1,11 @@
 .social-share {
+  max-width: 200px;
   &__title {
-  	color: #fff;
-  	letter-spacing: 0.1px;
-  	font-weight: 300;
-  	font-style: normal;
-  	font-stretch: normal;
-  	font-size: 9px;
-  	font-family: Helvetica;
-  	line-height: 1.92;
-    opacity: 0.5;
+    font-family: 'PFDinTextPro-Regular';
+    color: #0093da;
+    font-size: 18px;
+    letter-spacing: 0.055em;
+    color: #0093da;
   }
 }
 

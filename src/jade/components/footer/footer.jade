@@ -1,2 +1,27 @@
 +b.FOOTER.footer.__footer(role='contentinfo')
   +e.wrap
+    +e.row
+      +e.col
+        +e.link(href='http://google.com')
+          | Проектная документация
+        include ../social-share/social-share
+      +e.col
+        +e.address
+          span
+            | Наш адрес:
+          | Московская обл., Ленинский район, с.п. Булатниковское, д. Жабкино
+      +e.col
+        +e.contacts
+          +e.title
+            | Телефон
+          +e.info
+            +e.tel
+              | +7(495) 456-78-87
+            +e.schedule
+              | с 9.00 до 21.00
+      +e.col
+        +e.fz
+          +button._theme_jk._size_m._view_pseudo._view_mult.__rating
+            | Рейтинг: #[span(class='part') 4,6]
+          +e.A.fz-doc
+            Строительство по #[span ФЗ-214]
