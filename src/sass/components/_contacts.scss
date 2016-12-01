@@ -1,10 +1,12 @@
 .contacts {
-  margin-top: 21px;
+  align-items: center;
   text-align: right;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
   &__info {
     display: inline-block;
-    margin-right: 23px;
     vertical-align: top;
   }
   &__tel {

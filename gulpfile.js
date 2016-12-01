@@ -13,7 +13,9 @@ var fs = require('fs'),
     cheerio = require('gulp-cheerio'),
     path = require('path'),
     browserSync = require('browser-sync'),
-    reload = browserSync.reload;
+    reload = browserSync.reload,
+    postcss = require('gulp-postcss'),
+    flexibility = require('postcss-flexibility');
 
 var src = {
   root    : 'src',
@@ -59,7 +61,8 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(plumber())
     .pipe(sass())
-    .pipe(autoprefixer("last 2 version"))
+    .pipe(autoprefixer('last 2 version', 'ie8', 'ie9'))
+    // .pipe(postcss([flexibility]))
     .pipe(rename('style.css'))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(dest.css))

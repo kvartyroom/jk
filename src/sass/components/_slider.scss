@@ -1,0 +1,51 @@
+.slider {
+  max-height: 576px;
+  height: 100%;
+
+  &__slide {
+    height: 100%;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/pages/home/bg-1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__container {
+    @extend %clearfix;
+
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1280px;
+  }
+  &__text {
+    position: absolute;
+    top: 58px;
+    right: 126px;
+  }
+  &__title {
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-size: 48px;
+    font-family: 'PFDinTextPro-Bold';
+    line-height: 63px;
+  }
+  &__subtitle {
+    margin-top: 21px;
+    max-width: 410px;
+    color: #fff;
+    letter-spacing: 0.055em;
+    font-size: 28px;
+    font-family: 'PFDinTextPro-Thin';
+    line-height: 28px;
+  }
+  &__divider {
+    width: 144px;
+    height: 6px;
+    background: #fff;
+  }
+}

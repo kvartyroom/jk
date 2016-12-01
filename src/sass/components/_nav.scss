@@ -1,6 +1,8 @@
 .nav {
   position: relative;
   height: 90px;
+  display: flex;
+  justify-content: space-between;
 
   &__logo {
     position: relative;
@@ -15,7 +17,6 @@
   &__title {
     display: inline-block;
     margin-top: 26px;
-    margin-left: 20px;
     max-width: 196px;
     text-transform: uppercase;
     letter-spacing: 0.025em;
@@ -25,18 +26,26 @@
   &__left,
   &__center,
   &__right {
+    display: flex;
     height: 100%;
   }
+
   &__left {
-    float: left;
+    width: 260px;
+    justify-content: space-between;
   }
+
   &__center {
-    float: left;
+    width: 528px;
   }
+
   &__right {
-    float: right;
+    width: 246px;
   }
+
   &__menu {
-    margin-top: 39px;
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
 }

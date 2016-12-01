@@ -43,17 +43,23 @@
   display: inline-block;
   *display: inline;
   zoom: 1;
+  &.active {
+    span {
+      background: none;
+    }
+  }
 }
 .owl-theme .owl-dots .owl-dot span {
   display: block;
-  margin: 5px 7px;
-  width: 8px;
-  height: 8px;
-  border: 1px solid #393939;
+  margin: 5px 18px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fff;
   border-radius: 100%;
   background: transparent;
   transition: opacity 200ms ease;
   -webkit-backface-visibility: visible;
+  background: #fff;
 }
 
 .owl-theme .owl-dots .owl-dot {
@@ -61,21 +67,11 @@
   &.next span {
     border: 1px solid #fff;
   }
-  &.active {
-    &:nth-child(1) span,
-    &:nth-child(3) span {
-      background: #393939;
-    }
-    &:nth-child(2) span {
-      background: #fff;
-      border-color: #fff;
-    }
-  }
 }
 
 .owl-dots {
   position: absolute;
-  bottom: 16px;
+  bottom: 38px;
   left: 50%;
   transform: translateX(-50%);
 }

@@ -16,13 +16,15 @@
     "gulp-csso": "^2.0.0",
     "gulp-jade": "^1.1.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
     "gulp-sourcemaps": "^2.0.0-alpha",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
     "gulp-util": "^3.0.7",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "postcss-flexibility": "^1.1.0"
   },
   "dependencies": {
     "gulp": "^3.9.1"

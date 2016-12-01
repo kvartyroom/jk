@@ -1,0 +1,71 @@
+.tooltip {
+  height: 100%;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  &__list {
+    &_left {
+      margin-top: 90px;
+      margin-left: 48px;
+    }
+    &_right {
+      margin-top: 235px;
+      margin-right: 48px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 265px;
+    height: 57px;
+    background-repeat: no-repeat;
+
+    &_v1 {
+      background-image: url('../img/tooltips/tooltip-1.png');
+    }
+    &_v2 {
+      background-image: url('../img/tooltips/tooltip-2.png');
+    }
+  }
+  &__text {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.055em;
+    font-size: 14px;
+    font-family: 'PFDinTextPro-Thin';
+  }
+  &__img {
+    display: inline-block;
+    width: 34px;
+    height: 35px;
+    background-image: url('../img/icons/pic.png');
+    background-repeat: no-repeat;
+    +.tooltip__text {
+      margin-left: 20px;
+      width: 130px;
+      word-break: break-word;
+    }
+  }
+  &__num {
+    display: inline-block;
+    margin-left: 18px;
+    color: #fff;
+    letter-spacing: 0.055em;
+    font-size: 34px;
+    font-family: 'PFDinTextPro-Medium';
+
+    +.tooltip__text {
+      margin-left: 4px;
+      width: 130px;
+      word-break: break-word;
+    }
+  }
+}
