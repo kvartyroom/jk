@@ -1,51 +1,21 @@
 .nav {
-  position: relative;
-  height: 90px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin: 0;
+  padding-left: 0;
+  width: 100%;
+  list-style-type: none;
 
-  &__logo {
-    position: relative;
-    margin-top: 17px;
-    width: 43px;
-    height: 60px;
-    background-image: url('../img/logos/logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: top;
+  &__item {
+
   }
-  &__title {
-    display: inline-block;
-    margin-top: 26px;
-    max-width: 196px;
+  &__link {
+    color: #3a3a3a;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.025em;
-    font-size: 17px;
+    font-size: 14px;
     font-family: 'PFDinTextPro-Light';
-  }
-  &__left,
-  &__center,
-  &__right {
-    display: flex;
-    height: 100%;
-  }
-
-  &__left {
-    width: 260px;
-    justify-content: space-between;
-  }
-
-  &__center {
-    width: 528px;
-  }
-
-  &__right {
-    width: 246px;
-  }
-
-  &__menu {
-    width: 100%;
-    display: flex;
-    align-items: center;
   }
 }

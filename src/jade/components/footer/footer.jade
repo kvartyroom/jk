@@ -1,9 +1,9 @@
+include ../link/link
 +b.FOOTER.footer.__footer(role='contentinfo')
   +e.wrap
-    +e.row
+    +e.cols
       +e.col
-        +e.link(href='http://google.com')
-          | Проектная документация
+        +link('Проектная документация', 'http://google.com')._size_m
         include ../social-share/social-share
       +e.col
         +e.address
@@ -14,14 +14,13 @@
         +e.contacts
           +e.title
             | Телефон
-          +e.info
-            +e.tel
-              | +7(495) 456-78-87
-            +e.schedule
-              | с 9.00 до 21.00
+          +e.tel
+            | +7(495) 456-78-87
+          +e.schedule
+            | с 9.00 до 21.00
       +e.col
         +e.fz
           +button._theme_jk._size_m._view_pseudo._view_mult.__rating
             | Рейтинг: #[span(class='part') 4,6]
           +e.A.fz-doc
-            Строительство по #[span ФЗ-214]
+            | Строительство по #[span ФЗ-214]

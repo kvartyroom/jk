@@ -1,9 +1,18 @@
 include ../icon/icon
 
-mixin button(isIcon)
-  +b.BUTTON.button&attributes(attributes)
-    if isIcon
+mixin button(type, url)
+  if type === 'submit'
+    +b.BUTTON.button._type_submit(type='submit' role='button')&attributes(attributes)
+      +e.SPAN.text
+        block
+  else if type === 'link'
+    +b.A.button._type_link(role='link', href='#{url}')&attributes(attributes)
+      +e.SPAN.text
+        block
+  else if type === 'icon'
+    +b.BUTTON.button(type='button' role='button')&attributes(attributes)
       block
-    else
+  else
+    +b.BUTTON.button(type='button' role='button')&attributes(attributes)
       +e.SPAN.text
         block

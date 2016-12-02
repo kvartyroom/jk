@@ -14,21 +14,22 @@
     text-align: center;
     white-space: nowrap;
     font-weight: 400;
-    letter-spacing: 0.055em;
+    letter-spacing: 0.025em;
     font-style: normal;
   	font-stretch: normal;
     font-family: 'PFDinTextPro-Thin';
     opacity: 1;
     cursor: pointer;
-    transition: opacity 0.3s ease;
+    transition: 0.3s ease;
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-    &:hover {
-      &.button_view {
-        &_action {
+    &.button_type {
+      &_link {
 
-        }
+      }
+      &_submit {
+
       }
     }
     &.button_size {
@@ -51,12 +52,19 @@
         background: none;
       }
       &_action {
-        background: #0093da;
-        color: #fff;
+        &:hover {
+          background: #0093da;
+          color: #fff;
+        }
       }
-      &_white {
-        border-color: white;
+      &_secondary {
+        background-color: transparent;
+        border-color: #fff;
         color: #fff;
+        &:hover {
+          background-color: #fff;
+          color: #3a3a3a;
+        }
       }
       &_mult {
         color: #000;
@@ -98,34 +106,8 @@
         height: 24px;
       }
     }
-    &.button_icon {
-      position: relative;
-      &.button {
-        &_icon_video {
-          &::after {
-            position: absolute;
-            top: 6px;
-            left: 12%;
-            content: '';
-            background-image: url('../img/icons/player.png');
-            background-repeat: no-repeat;
-            width: 33px;
-            height: 28px;
-          }
-        }
-        &_icon_pdf {
-          &::after {
-            position: absolute;
-            top: 6px;
-            left: 12%;
-            content: '';
-            background-image: url('../img/icons/pdf.png');
-            background-repeat: no-repeat;
-            width: 26px;
-            height: 24px;
-          }
-        }
-      }
-    }
+  }
+  &_icon {
+
   }
 }

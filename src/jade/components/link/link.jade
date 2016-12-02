@@ -1,0 +1,7 @@
+mixin link(content, url, isBlock)
+  if (isBlock)
+    +b.A(href='#{url}').link._type_block._theme_jk&attributes(attributes)
+      | #{content}
+  else
+    +b.A(href='#{url}').link._theme_jk&attributes(attributes)
+      | #{content}

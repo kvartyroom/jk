@@ -7,16 +7,9 @@
     margin-left: auto;
     margin-right: auto;
   }
-  &__row {
+  &__cols {
     display: flex;
     justify-content: space-between;
-  }
-  &__link {
-    color: #0093da;
-    letter-spacing: 0.025em;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: 'PFDinTextPro-Regular';
   }
   &__title {
     color: #0093da;
@@ -34,9 +27,6 @@
       display: block;
       color: #0093da;
     }
-  }
-  &__info {
-    display: inline-block;
   }
   &__tel {
     margin-top: 2px;
@@ -60,9 +50,6 @@
     background: #0093da;
     text-align: center;
     line-height: 47px;
-  }
-  &__col {
-
   }
   &__fz {
     text-align: center;

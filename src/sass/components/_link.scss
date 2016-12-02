@@ -7,14 +7,21 @@
     -webkit-tap-highlight-color: transparent;
   }
 
-  &_theme_feedly {
-    color: #333;
+  &_theme_jk {
+    color: #0093da;
+    font-family: 'PFDinTextPro-Regular';
   }
 
   &_size {
     &_s {
-      font-size: 1.4rem;
-      line-height: 2.2rem;
+
+    }
+    &_m {
+      font-size: 1.8rem;
+      letter-spacing: 0.025em;
+    }
+    &_l {
+
     }
   }
 }

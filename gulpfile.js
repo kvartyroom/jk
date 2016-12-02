@@ -42,7 +42,7 @@ gulp.task('jade', function() {
     .pipe(jade({
       pretty: true,
       locals: {
-        'menu': JSON.parse(fs.readFileSync('src/jade/components/menu/data/data.json', {encoding: 'utf-8'}))
+        'nav': JSON.parse(fs.readFileSync('src/jade/components/nav/data/data.json', {encoding: 'utf-8'}))
       }
     }).on('error', gutil.log))
     .pipe(gulp.dest(dest.root))

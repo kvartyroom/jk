@@ -31,36 +31,34 @@
     <div class="page page_index">
       <header role="banner" class="header page__header">
         <div class="header__wrap">
-          <div class="nav">
-            <div class="nav__left"><a class="logo nav__logo"></a><span class="nav__title">Новые ватутинки центральный квартал</span>
+          <nav class="navbar">
+            <div class="navbar__left"><a class="logo navbar__logo"></a><span class="navbar__title">Новые ватутинки центральный квартал</span>
             </div>
-            <div class="nav__center">
-              <nav class="menu nav__menu">
-                <ul class="menu__list">
-                  <li class="menu__item"><a href="" class="menu__link">О проекте</a>
-                  </li>
-                  <li class="menu__item"><a href="" class="menu__link">Квартиры</a>
-                  </li>
-                  <li class="menu__item"><a href="" class="menu__link">Условия покупки</a>
-                  </li>
-                  <li class="menu__item"><a href="" class="menu__link">Ход строительства</a>
-                  </li>
-                  <li class="menu__item"><a href="" class="menu__link">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
+            <div class="navbar__center">
+              <ul class="nav navbar__nav">
+                <li class="nav__item"><a href="" class="nav__link">О проекте</a>
+                </li>
+                <li class="nav__item"><a href="" class="nav__link">Квартиры</a>
+                </li>
+                <li class="nav__item"><a href="" class="nav__link">Условия покупки</a>
+                </li>
+                <li class="nav__item"><a href="" class="nav__link">Ход строительства</a>
+                </li>
+                <li class="nav__item"><a href="" class="nav__link">Контакты</a>
+                </li>
+              </ul>
             </div>
-            <div class="nav__right">
-              <div class="contacts">
-                <div class="contacts__info">
-                  <div class="contacts__tel">+7(495) 456-78-87
+            <div class="navbar__right">
+              <div class="navbar__contacts">
+                <div class="navbar__info">
+                  <div class="navbar__tel">+7(495) 456-78-87
                   </div>
-                  <div class="contacts__schedule">с 9.00 до 21.00
+                  <div class="navbar__schedule">с 9.00 до 21.00
                   </div>
-                </div><a href="tel:+74954567887" class="contacts__phone"><span class="icon icon_phone"></span></a>
+                </div><a href="tel:+74954567887" class="navbar__phone"><span class="icon icon_phone"></span></a>
               </div>
             </div>
-          </div>
+          </nav>
         </div>
       </header>
       <main class="page__content" role="main">
@@ -202,7 +200,7 @@
                 </div>
               </div>
             </div>
-            <button class="button button_theme_jk button_size_m"><span class="button__text">Узнать подробности</span>
+            <button type="button" role="button" class="button button_theme_jk button_size_m"><span class="button__text">Узнать подробности</span>
             </button>
           </div>
         </section>
@@ -236,7 +234,7 @@
                 </div>
               </div>
             </div>
-            <button class="button button_theme_jk button_size_m button_view_pseudo button_view_white"><span class="button__text">Больше квартир</span>
+            <button type="button" role="button" class="button button_theme_jk button_size_m button_view_secondary"><span class="button__text">Больше квартир</span>
             </button>
             <div class="mortgage">
               <div class="mortgage__item"><img src="img/icons/mother.png" class="mortgage__img" alt="" role="presentation"/>
@@ -257,11 +255,11 @@
             <p class="section__text section__text_complex">ЖК "Видный город" называют светским пригородом Москвы. Проект представляет собой уникальный формат жилья, успешно совмещающий отдельные элементы бизнес-класса и премиального сегмента. При этом бюджет покупки квартиры соответствует уровню "эконом". Среди характерных особенностей нового жилого квартала - уникальная авторская архитектура, 50 ультрасовременных планировочных решений, редкие форматы квартир, подземные паркинги, собственная терасная площадь и полноценная инфраструктура. В ЖК "Видный город" цены являются доступными.
             </p>
             <div class="section__button-block">
-              <button class="button button_theme_jk button_size_m button_view_pseudo button_icon button_icon_video"><span class="button__text">Видео-тур</span>
+              <button type="button" role="button" class="button button_theme_jk button_size_m button_view_action"><span class="button__text">Видео-тур</span>
               </button>
-              <button class="button button_theme_jk button_size_m button_view_action button_icon button_icon_pdf"><span class="button__text">Презентация</span>
+              <button type="button" role="button" class="button button_theme_jk button_size_m button_view_action"><span class="button__text">Презентация</span>
               </button>
-              <button class="button button_theme_jk button_size_m button_view_pseudo"><span class="button__text">Подробнее о проекте</span>
+              <button type="button" role="button" class="button button_theme_jk button_size_m button_view_action"><span class="button__text">Подробнее о проекте</span>
               </button>
             </div>
           </div>
@@ -269,8 +267,8 @@
       </main>
       <footer role="contentinfo" class="footer page__footer">
         <div class="footer__wrap">
-          <div class="footer__row">
-            <div class="footer__col"><a href="http://google.com" class="footer__link">Проектная документация</a>
+          <div class="footer__cols">
+            <div class="footer__col"><a href="http://google.com" class="link link_theme_jk link_size_m">Проектная документация</a>
               <div class="social-share"><span class="social-share__title">Мы в социальных сетях</span>
                 <div data-services="facebook,vkontakte,twitter" class="ya-share2">
                 </div>
@@ -284,17 +282,15 @@
               <div class="footer__contacts">
                 <div class="footer__title">Телефон
                 </div>
-                <div class="footer__info">
-                  <div class="footer__tel">+7(495) 456-78-87
-                  </div>
-                  <div class="footer__schedule">с 9.00 до 21.00
-                  </div>
+                <div class="footer__tel">+7(495) 456-78-87
+                </div>
+                <div class="footer__schedule">с 9.00 до 21.00
                 </div>
               </div>
             </div>
             <div class="footer__col">
               <div class="footer__fz">
-                <button class="button button_theme_jk button_size_m button_view_pseudo button_view_mult footer__rating"><span class="button__text">Рейтинг: <span class="part">4,6</span></span>
+                <button type="button" role="button" class="button button_theme_jk button_size_m button_view_pseudo button_view_mult footer__rating"><span class="button__text">Рейтинг: <span class="part">4,6</span></span>
                 </button><a class="footer__fz-doc">Строительство по <span>ФЗ-214</span></a>
               </div>
             </div>

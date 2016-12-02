@@ -1,9 +1,7 @@
-+b.nav
-  +e.left
-    +b.A.logo.__logo
-    +e.SPAN.title
-      | Новые ватутинки центральный квартал
-  +e.center
-    include ../menu/menu
-  +e.right
-    include ../contacts/contacts
+- var menuList = locals['nav']
+
++b.UL.nav.__nav
+  each item in menuList
+    +e.LI.item
+      +e.A.link(href='')
+        | #{item.title}

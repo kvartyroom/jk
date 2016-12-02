@@ -1,8 +1,9 @@
 .apartment-features {
-  margin: 24px auto 0;
+  margin: 24px auto 8px;
   display: flex;
   max-width: 980px;
   justify-content: space-between;
+  align-items: center;
   &__right,
   &__left {
     display: flex;
@@ -30,14 +31,13 @@
     color: #494949;
     font-size: 18px;
     font-family: 'PFDinTextPro-Thin';
-    margin-bottom: 10px;
+    letter-spacing: 0.025em;
   }
   &__text-block {
     margin-bottom: 14px;
   }
   &__item {
     display: flex;
-    width: 90%;
     margin-bottom: 30px;
     align-items: center;
     &:last-child {
