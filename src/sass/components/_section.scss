@@ -7,17 +7,8 @@
     margin-right: auto;
   }
   &__title {
-    text-align: center;
-    font-weight: 400;
-    font-size: 36px;
-    font-family: 'PFDinTextPro-Regular';
-    letter-spacing: 0.025em;
     max-width: 520px;
     margin: 16px auto 10px;
-    text-transform: uppercase;
-    &_v2 {
-      color: #fff;
-    }
     b {
       text-transform: lowercase;
       font-weight: 400;
@@ -44,6 +35,14 @@
     background: #ffc300;
     width: 100px;
     height: 4px;
+    &_blue {
+      width: 112px;
+      background: $blue;
+    }
+    &_white {
+      background: #fff;
+      width: 112px;
+    }
   }
   &_apartment {
     position: relative;
@@ -60,8 +59,9 @@
     }
   }
   &_deals {
-    background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)), url('../img/pages/home/bg-2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)), url('../img/patterns/dashed.png'), url('../img/pages/home/bg-2.jpg');
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     width: 100%;
     padding-bottom: 26px;
@@ -69,5 +69,18 @@
   }
   &_complex {
     padding-bottom: 48px;
+  }
+  &_about-project {
+    overflow: hidden;
+    padding-top: 28px;
+  }
+  &_infrastructure {
+    background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)), url('../img/patterns/dashed.png'), url('../img/pages/project/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 26px;
+    overflow: hidden;
   }
 }

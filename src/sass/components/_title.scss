@@ -1,23 +1,24 @@
 .title {
-  color: #222;
-  font-family: 'TradeGothic';
+  text-align: center;
   text-transform: uppercase;
   font-weight: 400;
+  font-family: 'PFDinTextPro-Regular';
+  letter-spacing: 0.025em;
+  color: #000;
 
   &_size {
     &_s {
 
     }
     &_m {
-
+      font-size: 30px;
     }
     &_l {
-      font-size: 64px;
-      line-height: 60px;
+      font-size: 36px;
     }
-    &_xl {
-      font-size: 80px;
-      line-height: 88px;
-    }
+  }
+
+  &_v2 {
+    color: #fff;
   }
 }
