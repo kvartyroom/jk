@@ -782,7 +782,7 @@ img {
       height: 130px;
       bottom: 0; }
   .section_deals {
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/pages/home/bg-2.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)), url("../img/pages/home/bg-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
