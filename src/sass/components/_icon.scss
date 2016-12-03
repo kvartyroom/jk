@@ -19,4 +19,16 @@
     width: 24px;
     height: 25px;
   }
+  &_video {
+    background-image: url('../img/icons/player.png');
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 28px;
+  }
+  &_doc {
+    background-image: url('../img/icons/doc.png');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 26px;
+  }
 }

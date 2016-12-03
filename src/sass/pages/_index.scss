@@ -1,0 +1,123 @@
+/*---------- Apartments ----------*/
+.apartment-features {
+  margin: 24px auto 8px;
+  display: flex;
+  max-width: 980px;
+  justify-content: space-between;
+  align-items: center;
+  &__right,
+  &__left {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+  }
+  &__left {
+    text-align: right;
+    align-items: flex-end;
+    .apartment-features__text-block {
+      margin-right: 34px;
+    }
+  }
+  &__right {
+    text-align: left;
+    align-items: flex-start;
+    .apartment-features__text-block {
+      margin-left: 34px;
+    }
+  }
+  &__img {
+
+  }
+  &__text {
+    color: #494949;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Thin';
+    letter-spacing: 0.025em;
+  }
+  &__text-block {
+    margin-bottom: 14px;
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    &:last-child {
+      margin-bottom: 17px;
+    }
+  }
+  &__divider {
+    display: inline-block;
+    background: #ffc300;
+    width: 164px;
+    height: 2px;
+  }
+}
+
+/*---------- Deals ----------*/
+.plans {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 30px;
+  max-width: 880px;
+
+  &__type,
+  &__square,
+  &__price {
+    color: #fff;
+    letter-spacing: 0.055em;
+  }
+  &__type {
+    font-size: 24px;
+    font-family: 'PFDinTextPro-Thin';
+  }
+  &__square {
+    font-size: 25px;
+    font-family: 'PFDinTextPro-Light';
+
+    span {
+      font-size: 24px;
+      font-family: 'PFDinTextPro-Thin';
+    }
+  }
+  &__price {
+    font-size: 30px;
+    font-family: 'PFDinTextPro-Regular';
+
+    span {
+      font-size: 20px;
+      font-family: 'PFDinTextPro-Thin';
+
+      &:first-child {
+        margin-right: -5px;
+      }
+    }
+  }
+}
+
+.mortgage {
+  display: flex;
+  width: 360px;
+  margin: 30px auto 0 auto;
+
+  &__item {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__title {
+    margin-top: 19px;
+    max-width: 120px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Light';
+  }
+}
+
+/*---------- Complex ----------*/
+.section__button-block {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 840px;
+  margin: 24px auto 0;
+  justify-content: space-between;
+}

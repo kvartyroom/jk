@@ -20,7 +20,7 @@
     font-family: 'PFDinTextPro-Thin';
     opacity: 1;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: background-color 0.3s ease;
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
@@ -55,6 +55,14 @@
         &:hover {
           background: #0093da;
           color: #fff;
+          .icon {
+            &_video {
+              background-image: url('../img/icons/player-white.png');
+            }
+            &_doc {
+              background-image: url('../img/icons/doc-white.png');
+            }
+          }
         }
       }
       &_secondary {
@@ -66,10 +74,15 @@
           color: #3a3a3a;
         }
       }
-      &_mult {
+      &_rating {
+        background-color: transparent;
         color: #000;
         border-color: #000;
-        .part {
+        .button__text {
+          margin: 8px 20px;
+          min-width: 130px;
+        }
+        .num {
           color: #0093da;
         }
       }
@@ -81,6 +94,13 @@
         opacity: 0.5;
       }
     }
+    &.button_icon {
+      width: 250px;
+      .button__text {
+        min-width: 0;
+        margin: 10px 4px 10px 20px;
+      }
+    }
     .button__text {
       position: relative;
       display: inline-block;
@@ -89,25 +109,7 @@
       text-overflow: ellipsis;
       opacity: 1;
       transition: opacity 0.3s ease;
+      vertical-align: middle;
     }
-
-    .button__img {
-      display: inline-block;
-      &_video {
-        background-image: url('../img/icons/player.png');
-        background-repeat: no-repeat;
-        width: 33px;
-        height: 28px;
-      }
-      &_pdf {
-        background-image: url('../img/icons/pdf.png');
-        background-repeat: no-repeat;
-        width: 26px;
-        height: 24px;
-      }
-    }
-  }
-  &_icon {
-
   }
 }

@@ -7,10 +7,9 @@ mixin button(type, url)
         block
   else if type === 'link'
     +b.A.button._type_link(role='link', href='#{url}')&attributes(attributes)
-      +e.SPAN.text
         block
   else if type === 'icon'
-    +b.BUTTON.button(type='button' role='button')&attributes(attributes)
+    +b.BUTTON.button._icon(type='button' role='button')&attributes(attributes)
       block
   else
     +b.BUTTON.button(type='button' role='button')&attributes(attributes)

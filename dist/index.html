@@ -55,7 +55,7 @@
                   </div>
                   <div class="navbar__schedule">с 9.00 до 21.00
                   </div>
-                </div><a href="tel:+74954567887" class="navbar__phone"><span class="icon icon_phone"></span></a>
+                </div><a role="link" href="tel:+74954567887" class="button button_type_link navbar__call"><span class="icon icon_phone"></span></a>
               </div>
             </div>
           </nav>
@@ -200,7 +200,7 @@
                 </div>
               </div>
             </div>
-            <button type="button" role="button" class="button button_theme_jk button_size_m"><span class="button__text">Узнать подробности</span>
+            <button type="button" role="button" class="button button_theme_jk button_size_m button_view_action"><span class="button__text">Узнать подробности</span>
             </button>
           </div>
         </section>
@@ -255,9 +255,9 @@
             <p class="section__text section__text_complex">ЖК "Видный город" называют светским пригородом Москвы. Проект представляет собой уникальный формат жилья, успешно совмещающий отдельные элементы бизнес-класса и премиального сегмента. При этом бюджет покупки квартиры соответствует уровню "эконом". Среди характерных особенностей нового жилого квартала - уникальная авторская архитектура, 50 ультрасовременных планировочных решений, редкие форматы квартир, подземные паркинги, собственная терасная площадь и полноценная инфраструктура. В ЖК "Видный город" цены являются доступными.
             </p>
             <div class="section__button-block">
-              <button type="button" role="button" class="button button_theme_jk button_size_m button_view_action"><span class="button__text">Видео-тур</span>
+              <button type="button" role="button" class="button button_icon button_theme_jk button_size_m button_view_action"><span class="icon icon_video"></span><span class="button__text">Видео-тур</span>
               </button>
-              <button type="button" role="button" class="button button_theme_jk button_size_m button_view_action"><span class="button__text">Презентация</span>
+              <button type="button" role="button" class="button button_icon button_theme_jk button_size_m button_view_action"><span class="icon icon_doc"></span><span class="button__text"></span>Презентация
               </button>
               <button type="button" role="button" class="button button_theme_jk button_size_m button_view_action"><span class="button__text">Подробнее о проекте</span>
               </button>
@@ -270,7 +270,7 @@
           <div class="footer__cols">
             <div class="footer__col"><a href="http://google.com" class="link link_theme_jk link_size_m">Проектная документация</a>
               <div class="social-share"><span class="social-share__title">Мы в социальных сетях</span>
-                <div data-services="facebook,vkontakte,twitter" class="ya-share2">
+                <div data-services="facebook,vkontakte" class="ya-share2">
                 </div>
               </div>
             </div>
@@ -290,7 +290,7 @@
             </div>
             <div class="footer__col">
               <div class="footer__fz">
-                <button type="button" role="button" class="button button_theme_jk button_size_m button_view_pseudo button_view_mult footer__rating"><span class="button__text">Рейтинг: <span class="part">4,6</span></span>
+                <button type="button" role="button" class="button button_theme_jk button_size_m button_view_rating"><span class="button__text">Рейтинг: <span class="num">4,6</span></span>
                 </button><a class="footer__fz-doc">Строительство по <span>ФЗ-214</span></a>
               </div>
             </div>
@@ -302,5 +302,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="/js/vendors/greensock/TweenMax.min.js"></script>
   <script src="/js/vendors/owl.carousel.min.js"></script>
+  <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+  <script src="//yastatic.net/share2/share.js"></script>
   <script src="/js/main.js"></script>
 </html>

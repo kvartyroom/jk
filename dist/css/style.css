@@ -470,6 +470,111 @@ img {
   width: 75%;
   height: 100%; }
 
+/*---------- Apartments ----------*/
+.apartment-features {
+  margin: 24px auto 8px;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 980px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+  .apartment-features__right, .apartment-features__left {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 440px; }
+  .apartment-features__left {
+    text-align: right;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+    .apartment-features__left .apartment-features__text-block {
+      margin-right: 34px; }
+  .apartment-features__right {
+    text-align: left;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+    .apartment-features__right .apartment-features__text-block {
+      margin-left: 34px; }
+  .apartment-features__text {
+    color: #494949;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Thin';
+    letter-spacing: 0.025em; }
+  .apartment-features__text-block {
+    margin-bottom: 14px; }
+  .apartment-features__item {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    -ms-flex-align: center;
+        align-items: center; }
+    .apartment-features__item:last-child {
+      margin-bottom: 17px; }
+  .apartment-features__divider {
+    display: inline-block;
+    background: #ffc300;
+    width: 164px;
+    height: 2px; }
+
+/*---------- Deals ----------*/
+.plans {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 20px auto 30px;
+  max-width: 880px; }
+  .plans__type, .plans__square, .plans__price {
+    color: #fff;
+    letter-spacing: 0.055em; }
+  .plans__type {
+    font-size: 24px;
+    font-family: 'PFDinTextPro-Thin'; }
+  .plans__square {
+    font-size: 25px;
+    font-family: 'PFDinTextPro-Light'; }
+    .plans__square span {
+      font-size: 24px;
+      font-family: 'PFDinTextPro-Thin'; }
+  .plans__price {
+    font-size: 30px;
+    font-family: 'PFDinTextPro-Regular'; }
+    .plans__price span {
+      font-size: 20px;
+      font-family: 'PFDinTextPro-Thin'; }
+      .plans__price span:first-child {
+        margin-right: -5px; }
+
+.mortgage {
+  display: -ms-flexbox;
+  display: flex;
+  width: 360px;
+  margin: 30px auto 0 auto; }
+  .mortgage__item {
+    margin-right: auto;
+    margin-left: auto; }
+  .mortgage__title {
+    margin-top: 19px;
+    max-width: 120px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Light'; }
+
+/*---------- Complex ----------*/
+.section__button-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 840px;
+  margin: 24px auto 0;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
 .button {
   -ms-touch-action: manipulation;
       touch-action: manipulation; }
@@ -492,7 +597,7 @@ img {
     font-family: 'PFDinTextPro-Thin';
     opacity: 1;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: background-color 0.3s ease;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -509,6 +614,10 @@ img {
     .button_theme_jk.button_view_action:hover {
       background: #0093da;
       color: #fff; }
+      .button_theme_jk.button_view_action:hover .icon_video {
+        background-image: url("../img/icons/player-white.png"); }
+      .button_theme_jk.button_view_action:hover .icon_doc {
+        background-image: url("../img/icons/doc-white.png"); }
     .button_theme_jk.button_view_secondary {
       background-color: transparent;
       border-color: #fff;
@@ -516,15 +625,24 @@ img {
       .button_theme_jk.button_view_secondary:hover {
         background-color: #fff;
         color: #3a3a3a; }
-    .button_theme_jk.button_view_mult {
+    .button_theme_jk.button_view_rating {
+      background-color: transparent;
       color: #000;
       border-color: #000; }
-      .button_theme_jk.button_view_mult .part {
+      .button_theme_jk.button_view_rating .button__text {
+        margin: 8px 20px;
+        min-width: 130px; }
+      .button_theme_jk.button_view_rating .num {
         color: #0093da; }
     .button_theme_jk.button_disabled {
       opacity: 0.75; }
       .button_theme_jk.button_disabled .button__text {
         opacity: 0.5; }
+    .button_theme_jk.button_icon {
+      width: 250px; }
+      .button_theme_jk.button_icon .button__text {
+        min-width: 0;
+        margin: 10px 4px 10px 20px; }
     .button_theme_jk .button__text {
       position: relative;
       display: inline-block;
@@ -532,19 +650,8 @@ img {
       vertical-align: top;
       text-overflow: ellipsis;
       opacity: 1;
-      transition: opacity 0.3s ease; }
-    .button_theme_jk .button__img {
-      display: inline-block; }
-      .button_theme_jk .button__img_video {
-        background-image: url("../img/icons/player.png");
-        background-repeat: no-repeat;
-        width: 33px;
-        height: 28px; }
-      .button_theme_jk .button__img_pdf {
-        background-image: url("../img/icons/pdf.png");
-        background-repeat: no-repeat;
-        width: 26px;
-        height: 24px; }
+      transition: opacity 0.3s ease;
+      vertical-align: middle; }
 
 .page {
   position: relative;
@@ -670,7 +777,7 @@ img {
       position: absolute;
       background-image: url("../img/patterns/pattern.png");
       background-repeat: repeat-x;
-      background-size: contain;
+      background-position-y: 100%;
       width: 100%;
       height: 130px;
       bottom: 0; }
@@ -747,7 +854,7 @@ img {
     letter-spacing: 0.025em;
     font-size: 14px;
     font-family: 'PFDinTextPro-Light'; }
-  .navbar__phone {
+  .navbar__call {
     display: inline-block;
     width: 47px;
     height: 47px;
@@ -806,6 +913,16 @@ img {
     background-repeat: no-repeat;
     width: 24px;
     height: 25px; }
+  .icon_video {
+    background-image: url("../img/icons/player.png");
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 28px; }
+  .icon_doc {
+    background-image: url("../img/icons/doc.png");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 26px; }
 
 .link {
   cursor: pointer;
@@ -879,9 +996,6 @@ img {
     .footer__fz-doc span {
       color: #0093da;
       font-family: 'PFDinTextPro-Light'; }
-  .footer__rating.button_theme_jk span.button__text {
-    margin: 8px 20px;
-    min-width: 130px; }
 
 .social-share {
   max-width: 200px; }
@@ -896,15 +1010,18 @@ img {
   margin: 5px 0 25px !important; }
 
 .ya-share2__item {
-  margin: 0 0 0 10px !important; }
+  margin: 0 0 0 3px !important; }
+  .ya-share2__item:first-child {
+    margin-left: 0 !important; }
 
 .ya-share2__badge {
   border-radius: 100% !important;
-  background: rgba(255, 255, 255, 0.5) !important;
-  line-height: 22px !important;
+  background: #9e9e9e !important;
+  line-height: 30px !important;
   transition: 0.3s ease;
-  width: 22px;
-  height: 22px; }
+  width: 30px;
+  height: 30px;
+  text-align: center; }
   .ya-share2__badge:hover {
     transform: scale(1.1); }
     .ya-share2__badge:hover::after {
@@ -916,7 +1033,7 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    background: #018ecc;
+    background: #9b9b9b;
     content: '';
     transition: ease 0.3s;
     transform: scale(0.95); }
@@ -926,59 +1043,6 @@ img {
   z-index: 1;
   background-size: contain;
   vertical-align: middle; }
-
-.ya-share2 .ya-share2__container_size_m .ya-share2__item_service_twitter .ya-share2__icon {
-  width: 10px;
-  height: 12px;
-  background: url("../img/icons/socials/twitter.svg") no-repeat; }
-
-.ya-share2 .ya-share2__container_size_m .ya-share2__item_service_twitter .ya-share2__badge:hover .ya-share2__icon {
-  background: url("../img/icons/socials/twitter-hover.svg") no-repeat; }
-
-.ya-share2 .ya-share2__container_size_m .ya-share2__item_service_facebook .ya-share2__icon {
-  width: 8px;
-  height: 13px;
-  background: url("../img/icons/socials/facebook.svg") no-repeat; }
-
-.ya-share2 .ya-share2__container_size_m .ya-share2__item_service_facebook .ya-share2__badge:hover .ya-share2__icon {
-  background: url("../img/icons/socials/facebook-hover.svg") no-repeat; }
-
-.ya-share2 .ya-share2__container_size_m .ya-share2__item_service_vkontakte .ya-share2__icon {
-  width: 14px;
-  height: 8px;
-  background: url("../img/icons/socials/vk.svg") no-repeat; }
-
-.ya-share2 .ya-share2__container_size_m .ya-share2__item_service_vkontakte .ya-share2__badge:hover .ya-share2__icon {
-  background: url("../img/icons/socials/vk-hover.svg") no-repeat; }
-
-@media screen and (min-width: 1400px) {
-  .social-share__title {
-    font-size: 11px;
-    line-height: 1.57; }
-  .ya-share2__list {
-    margin-top: 9px !important; } }
-
-@media screen and (min-width: 1920px) {
-  .social-share__title {
-    font-size: 14px;
-    line-height: 1.64; }
-  .ya-share2__list {
-    margin-top: 15px !important; }
-  .ya-share2__item {
-    margin-left: 12px !important; }
-  .ya-share2__badge {
-    width: 30px !important;
-    height: 30px !important;
-    line-height: 30px !important; }
-  .ya-share2 .ya-share2__container_size_m .ya-share2__item_service_twitter .ya-share2__icon {
-    width: 12px;
-    height: 17px; }
-  .ya-share2 .ya-share2__container_size_m .ya-share2__item_service_facebook .ya-share2__icon {
-    width: 10px;
-    height: 18px; }
-  .ya-share2 .ya-share2__container_size_m .ya-share2__item_service_vkontakte .ya-share2__icon {
-    width: 20px;
-    height: 11px; } }
 
 .hero {
   height: 576px; }
@@ -1091,108 +1155,6 @@ img {
       margin-left: 4px;
       width: 130px;
       word-break: break-word; }
-
-.apartment-features {
-  margin: 24px auto 8px;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 980px;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center; }
-  .apartment-features__right, .apartment-features__left {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    width: 440px; }
-  .apartment-features__left {
-    text-align: right;
-    -ms-flex-align: end;
-        align-items: flex-end; }
-    .apartment-features__left .apartment-features__text-block {
-      margin-right: 34px; }
-  .apartment-features__right {
-    text-align: left;
-    -ms-flex-align: start;
-        align-items: flex-start; }
-    .apartment-features__right .apartment-features__text-block {
-      margin-left: 34px; }
-  .apartment-features__text {
-    color: #494949;
-    font-size: 18px;
-    font-family: 'PFDinTextPro-Thin';
-    letter-spacing: 0.025em; }
-  .apartment-features__text-block {
-    margin-bottom: 14px; }
-  .apartment-features__item {
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 30px;
-    -ms-flex-align: center;
-        align-items: center; }
-    .apartment-features__item:last-child {
-      margin-bottom: 17px; }
-  .apartment-features__divider {
-    display: inline-block;
-    background: #ffc300;
-    width: 164px;
-    height: 2px; }
-
-.plans {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  margin: 20px auto 30px;
-  max-width: 880px; }
-  .plans__type, .plans__square, .plans__price {
-    color: #fff;
-    letter-spacing: 0.055em; }
-  .plans__type {
-    font-size: 24px;
-    font-family: 'PFDinTextPro-Thin'; }
-  .plans__square {
-    font-size: 25px;
-    font-family: 'PFDinTextPro-Light'; }
-    .plans__square span {
-      font-size: 24px;
-      font-family: 'PFDinTextPro-Thin'; }
-  .plans__price {
-    font-size: 30px;
-    font-family: 'PFDinTextPro-Regular'; }
-    .plans__price span {
-      font-size: 20px;
-      font-family: 'PFDinTextPro-Thin'; }
-      .plans__price span:first-child {
-        margin-right: -5px; }
-
-.mortgage {
-  display: -ms-flexbox;
-  display: flex;
-  width: 360px;
-  margin: 30px auto 0 auto; }
-  .mortgage__item {
-    margin-right: auto;
-    margin-left: auto; }
-  .mortgage__title {
-    margin-top: 19px;
-    max-width: 120px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-family: 'PFDinTextPro-Light'; }
-
-.section__button-block {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 840px;
-  margin: 24px auto 0;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
 
 /**
  * Owl Carousel v2.2.0
