@@ -1,0 +1,68 @@
+.gallery {
+  margin-top: 13px;
+
+  &__wrap {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+  }
+  &__date {
+    padding-left: 7px;
+    color: #3a3a3a;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-size: 20px;
+    font-family: 'PFDinTextPro-Light';
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  &__item {
+    margin-bottom: 7px;
+    margin-left: 8px;
+  }
+  &__thumbnail {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 3px;
+    width: 191px;
+    height: 146px;
+    outline: 0;
+    border: 1px solid $blue;
+
+    &::after {
+      @include centerer;
+
+      display: block;
+      width: 49px;
+      height: 49px;
+      background-image: url('../img/icons/magnifier.png');
+      content: '';
+      opacity: 0;
+    }
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+  &__results {
+    margin-top: 0;
+    margin-left: 26px;
+    padding: 0;
+    text-align: left;
+    letter-spacing: 0.025em;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Thin';
+  }
+  &__done {
+    padding-left: 20px;
+  }
+}

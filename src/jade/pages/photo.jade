@@ -1,0 +1,12 @@
+extends ../components/layout/layout
+block head
+  - var pageTitle = 'Фото строительства';
+  - var pageDescription = ''
+block content
+  +b.page._project
+    include ../components/header/header
+    include ../components/section/section
+    include ../components/button/button
+    +e.MAIN.content
+      include ../sections/photo/album-1
+    include ../components/footer/footer

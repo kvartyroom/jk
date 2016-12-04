@@ -56,4 +56,31 @@ $(document).ready(function() {
       },
     }
 	});
+  $('.gallery__list').magnificPopup({
+    delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1]
+		},
+    closeMarkup: '<button type="button" class="mfp-close"></button>',
+    image: {
+			verticalFit: true,
+    },
+    callbacks: {
+      open: function() {
+        var share = Ya.share2('shareBlock', {
+            theme: {
+              services: 'facebook,vkontakte'
+            }
+        });
+      },
+      buildControls: function() {
+        this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+      }
+    }
+	});
 })

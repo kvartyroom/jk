@@ -895,6 +895,65 @@ img {
       width: 35px;
       background-image: url("../img/icons/forest.png"); }
 
+.gallery {
+  margin-top: 13px; }
+  .gallery__wrap {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px; }
+  .gallery__date {
+    padding-left: 7px;
+    color: #3a3a3a;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-size: 20px;
+    font-family: 'PFDinTextPro-Light'; }
+  .gallery__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    padding-left: 0;
+    list-style-type: none; }
+  .gallery__item {
+    margin-bottom: 7px;
+    margin-left: 8px; }
+  .gallery__thumbnail {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 3px;
+    width: 191px;
+    height: 146px;
+    outline: 0;
+    border: 1px solid #0093da; }
+    .gallery__thumbnail::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 49px;
+      height: 49px;
+      background-image: url("../img/icons/magnifier.png");
+      content: '';
+      opacity: 0; }
+    .gallery__thumbnail:hover::after {
+      opacity: 1; }
+  .gallery__results {
+    margin-top: 0;
+    margin-left: 26px;
+    padding: 0;
+    text-align: left;
+    letter-spacing: 0.025em;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Thin'; }
+  .gallery__done {
+    padding-left: 20px; }
+
 .button {
   -ms-touch-action: manipulation;
       touch-action: manipulation; }
@@ -1895,8 +1954,7 @@ img {
 .mfp-s-error .mfp-content {
   display: none; }
 
-button.mfp-close,
-button.mfp-arrow {
+button.mfp-close {
   overflow: visible;
   cursor: pointer;
   background: transparent;
@@ -1907,6 +1965,14 @@ button.mfp-arrow {
   padding: 0;
   z-index: 1046;
   box-shadow: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation; }
+
+button.mfp-arrow {
+  background-color: transparent;
+  border: 0;
+  display: block;
+  z-index: 1046;
   -ms-touch-action: manipulation;
       touch-action: manipulation; }
 
@@ -1958,6 +2024,7 @@ button::-moz-focus-inner {
   right: -50px !important; }
 
 .mfp-counter {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -1968,65 +2035,20 @@ button::-moz-focus-inner {
 
 .mfp-arrow {
   position: absolute;
-  opacity: 0.65;
-  margin: 0;
   top: 50%;
-  margin-top: -55px;
-  padding: 0;
-  width: 90px;
-  height: 110px;
-  -webkit-tap-highlight-color: transparent; }
-
-.mfp-arrow:active {
-  margin-top: -54px; }
-
-.mfp-arrow:hover,
-.mfp-arrow:focus {
-  opacity: 1; }
-
-.mfp-arrow:before,
-.mfp-arrow:after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin-top: 35px;
-  margin-left: 35px;
-  border: medium inset transparent; }
-
-.mfp-arrow:after {
-  border-top-width: 13px;
-  border-bottom-width: 13px;
-  top: 8px; }
-
-.mfp-arrow:before {
-  border-top-width: 21px;
-  border-bottom-width: 21px;
-  opacity: 0.7; }
+  background-image: url("../img/icons/svg/arrow-circle.svg");
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  outline: 0; }
 
 .mfp-arrow-left {
-  left: 0; }
-
-.mfp-arrow-left:after {
-  border-right: 17px solid #FFF;
-  margin-left: 31px; }
-
-.mfp-arrow-left:before {
-  margin-left: 25px;
-  border-right: 27px solid #3F3F3F; }
+  left: -65px;
+  transform: scaleX(-1); }
 
 .mfp-arrow-right {
-  right: 0; }
-
-.mfp-arrow-right:after {
-  border-left: 17px solid #FFF;
-  margin-left: 39px; }
-
-.mfp-arrow-right:before {
-  border-left: 27px solid #3F3F3F; }
+  right: -65px; }
 
 .mfp-iframe-holder {
   padding-top: 40px;
@@ -2161,10 +2183,16 @@ img.mfp-img {
 
 @media all and (max-width: 900px) {
   .mfp-arrow {
+    padding: 0;
     transform: scale(0.75); }
   .mfp-arrow-left {
-    transform-origin: 0; }
+    left: -6px;
+    transform: scale(-0.75); }
+  .mfp-close {
+    top: -6px !important;
+    right: 0 !important; }
   .mfp-arrow-right {
+    right: 0;
     transform-origin: 100%; }
   .mfp-container {
     padding-left: 6px;
