@@ -1222,6 +1222,8 @@ img {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; }
+  .section_album {
+    padding-bottom: 20px; }
 
 .header__wrap {
   box-sizing: border-box;
