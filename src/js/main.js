@@ -6,6 +6,22 @@ $(document).ready(function() {
     items: 1
   })
 
+  $('#btnBlock, #btnMap').on('click', function() {
+    console.log($(this).attr('id'));
+    if ($(this).attr('id') === 'btnBlock') {
+      $('.section__map').hide();
+      $('.section__blocks').show();
+    }
+    if ($(this).attr('id') === 'btnMap') {
+      $('.section__map').show();
+      $('.section__blocks').hide();
+    }
+  });
+
+  $('.placemark-filter__list').on('click', '.placemark-filter__item', function() {
+    $(this).toggleClass('placemark-filter__item_checked');
+  });
+
   $('.card__thumb').magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
