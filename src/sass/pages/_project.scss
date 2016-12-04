@@ -1,3 +1,4 @@
+/*---------- Project Features ----------*/
 .project-features {
   margin: 20px auto 0;
   max-width: 760px;
@@ -55,6 +56,7 @@
   }
 }
 
+/*---------- Infrastructure ----------*/
 .infrastructure {
   &__list {
     display: flex;
@@ -115,7 +117,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background: url('../img/pages/project/bg-2.jpg') no-repeat;
+    background: url('../img/pages/project/bg-3.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 0;
@@ -123,10 +125,6 @@
     transition: opacity 0.3s;
     overflow: hidden;
 
-    img {
-      width: 100%;
-      height: 100%;
-    }
     &-caption {
       position: absolute;
       bottom: -43px;
@@ -142,6 +140,14 @@
       font-family: 'PFDinTextPro-Light';
       line-height: 43px;
       transition: bottom 0.3s linear;
+    }
+    &-overlay {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.28);
+    }
+    &-icon {
+      @include centerer;
     }
   }
   &__content {
@@ -202,5 +208,104 @@
       width: 79px;
       background-image: url('../img/icons/forest.png');
     }
+  }
+}
+
+/*---------- Communication ----------*/
+.communication-features {
+  margin: 24px auto 8px;
+  display: flex;
+  max-width: 980px;
+  justify-content: space-between;
+  align-items: center;
+  &__right,
+  &__left {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+  }
+  &__left {
+    text-align: right;
+    align-items: flex-end;
+    .communication-features__text-block {
+      margin-right: 34px;
+    }
+  }
+  &__right {
+    text-align: left;
+    align-items: flex-start;
+    .communication-features__text-block {
+      margin-left: 34px;
+    }
+  }
+  &__img {
+
+  }
+  &__text,
+  &__title {
+    color: #494949;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-family: 'PFDinTextPro-Regular';
+  }
+  &__text {
+    font-family: 'PFDinTextPro-Thin';
+  }
+  &__text-block {
+    margin-bottom: 14px;
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    &:last-child {
+      margin-bottom: 17px;
+    }
+  }
+  &__divider {
+    display: inline-block;
+    background: #ffc300;
+    width: 216px;
+    height: 2px;
+  }
+}
+
+/*---------- Documentation ----------*/
+.docs {
+  display: flex;
+  justify-content: space-around;
+  &__col {
+    &:first-child {
+      max-width: 390px;
+    }
+    &:nth-child(2) {
+      max-width: 320px;
+    }
+    &:nth-child(3) {
+      max-width: 285px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 33px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'PFDinTextPro-Regular';
+  }
+  &__files {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__file.link_theme_jk {
+    display: block;
+    text-decoration: underline;
+    font-size: 20px;
+    line-height: 33px;
+    color: #fff;
+    font-family: 'PFDinTextPro-Thin';
   }
 }

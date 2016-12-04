@@ -7,8 +7,8 @@
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #0b0b0b;
-  opacity: 0.8; }
+  background: #000;
+  opacity: 0.93; }
 
 .mfp-wrap {
   top: 0;
@@ -287,6 +287,7 @@ img.mfp-img {
     margin: 0; }
 
 .mfp-bottom-bar {
+  box-sizing: border-box;
   margin-top: -24px;
   position: absolute;
   top: 90%;
@@ -303,7 +304,6 @@ img.mfp-img {
   line-height: 52px;
   color: #fff;
   word-wrap: break-word;
-  padding-right: 36px;
   font-size: 20px;
   font-family: 'PFDinTextPro-Light';
 }
