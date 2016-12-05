@@ -94,6 +94,23 @@
           }
         }
       }
+      &_plain {
+        background: transparent;
+        color: #3a3a3a;
+        border-color: #3a3a3a;
+        .button__text {
+          min-width: auto;
+          margin: 7px 24px;
+        }
+      }
+      &_primary.button_size_m {
+        background: #0093da;
+        color: #fff;
+        .button__text {
+          min-width: auto;
+          margin: 7px 16px;
+        }
+      }
       &_secondary {
         border-color: #fff;
         background-color: transparent;
@@ -115,6 +132,15 @@
         }
         .num {
           color: #0093da;
+        }
+      }
+      &_tag {
+        color: #3a3a3a;
+        margin-bottom: 9px;
+        margin-right: 9px;
+        .button__text {
+          min-width: auto;
+          margin: 8px 34px;
         }
       }
     }

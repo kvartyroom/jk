@@ -1,12 +1,12 @@
 extends ../components/layout/layout
 block head
-  - var pageTitle = 'Фото строительства';
+  - var pageTitle = 'Квартира';
   - var pageDescription = ''
 block content
-  +b.page._photo
+  +b.page._apartment
     include ../components/header/header
     include ../components/section/section
     include ../components/button/button
     +e.MAIN.content
-      include ../sections/photo/album-1
+      include ../sections/apartment/tth
     include ../components/footer/footer

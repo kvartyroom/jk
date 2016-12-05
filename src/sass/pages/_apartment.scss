@@ -1,0 +1,158 @@
+.apartment {
+  padding-bottom: 42px;
+
+  &__tth {
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1056px;
+  }
+  &__list {
+    margin: 42px auto 0;
+    max-width: 1190px;
+  }
+  &__list-title {
+    margin-bottom: 24px;
+    color: #3a3a3a;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-size: 20px;
+    font-family: 'PFDinTextPro-Thin';
+  }
+  &__button.button_theme_jk.button_size_m.button_view_plain {
+    margin-top: 30px;
+  }
+}
+
+.preview {
+  &__modes {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+  }
+  &__mode {
+    margin-left: 18px;
+    width: 62px;
+    height: 62px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &_2d {
+      background-image: url('../img/icons/2D.png');
+    }
+    &_3d {
+      background-image: url('../img/icons/3D.png');
+    }
+    &_panoramic {
+      background-image: url('../img/icons/photo.png');
+    }
+    &_video {
+      background-image: url('../img/icons/video.png');
+    }
+  }
+}
+
+.props {
+  max-width: 460px;
+
+  &__title {
+    margin-top: -8px;
+    color: #3a3a3a;
+    text-align: left;
+    letter-spacing: 0.025em;
+    font-size: 36px;
+    font-family: 'PFDinTextPro-Medium';
+  }
+  &__info {
+    margin-top: 12px;
+    color: #3a3a3a;
+    letter-spacing: 0.025em;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Thin';
+
+    tr td {
+      width: 100%;
+
+      &:first-child {
+        text-align: left;
+      }
+      &:last-child {
+        text-align: right;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.tags {
+  text-align: left;
+}
+
+.price-block {
+  margin-top: 80px;
+  max-width: 310px;
+  text-align: left;
+
+  &__title,
+  &__price {
+    display: block;
+    color: #3a3a3a;
+    letter-spacing: 0.025em;
+  }
+  &__title {
+    font-size: 24px;
+    font-family: 'PFDinTextPro-Thin';
+  }
+  &__price {
+    margin-top: 3px;
+    font-size: 36px;
+    font-family: 'PFDinTextPro-Light';
+  }
+  &__docs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+  }
+  &__link.link_theme_jk {
+    color: #3a3a3a;
+    text-decoration: underline;
+  }
+}
+
+.contacts-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 46px;
+
+  &__left {
+
+  }
+  &__right {
+
+  }
+  &__tel,
+  &__description {
+    color: #3a3a3a;
+    letter-spacing: 0.025em;
+    line-height: 22px;
+  }
+  &__tel {
+    margin-bottom: 6px;
+    font-size: 34px;
+    font-family: 'PFDinTextPro-Medium';
+  }
+  &__description {
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Thin';
+  }
+}
+.unit {
+  vertical-align: super;
+  font-size: 12px;
+}
