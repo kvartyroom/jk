@@ -1,10 +1,108 @@
+.building-section {
+  &__title {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: #3a3a3a;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Thin';
+    letter-spacing: 0.025em;
+  }
+  &_big {
+    .building-section__lower {
+      .building-section__brick_1 {
+        width: 213px;
+      }
+    }
+    .building-section__upper {
+      height: 7px;
+      position: relative;
+      .building-section__brick {
+        position: absolute;
+        &_2 {
+          right: 5px;
+          width: 200px;
+        }
+        &_3 {
+          top: -3px;
+          right: 8px;
+          width: 190px;
+        }
+        &_4 {
+          top: -6px;
+          right: 13px;
+          width: 180px;
+        }
+      }
+    }
+  }
+  &_small {
+    margin-right: 20px;
+    .building-section__upper {
+      height: 7px;
+      position: relative;
+      .building-section__brick {
+        position: absolute;
+        &_2 {
+          right: 5px;
+          width: 84px;
+        }
+        &_3 {
+          top: -3px;
+          right: 8px;
+          width: 75px;
+        }
+        &_4 {
+          top: -6px;
+          right: 13px;
+          width: 65px;
+        }
+      }
+    }
+    .building-section__lower {
+      .building-section__brick_1 {
+        width: 95px;
+      }
+    }
+  }
+  &__lower {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__brick {
+    background: #b2def4;
+    &_1 {
+      height: 9px;
+      margin-top: -1px;
+      background: #b2def4;
+    }
+    &_2 {
+      height: 7px;
+      background: #b2def4;
+    }
+    &_3 {
+      background: #fff;
+      height: 2px;
+      border: 1px solid #b2def4;
+    }
+    &_4 {
+      height: 3px;
+      background: #b2def4;
+    }
+  }
+  &__upper {
+
+  }
+}
+
 .building-apartments {
   border-color: $blue;
   width: 100%;
   max-width: 100%;
-  margin-bottom: 1rem;
   border-collapse: collapse;
   border-color: #b2def4;
+  tr:last-child td {
+    border-bottom: none;
+  }
   th, td {
     padding: 1px 9px;
     border-width: 1px;
@@ -14,6 +112,8 @@
     font-size: 12px;
     font-family: 'PFDinTextPro-Thin';
     letter-spacing: 0.025em;
+  }
+  th {
   }
   td {
     cursor: pointer;

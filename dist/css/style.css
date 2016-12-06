@@ -1088,13 +1088,86 @@ img {
   margin-left: auto;
   margin-right: auto; }
 
+.building-section__title {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  color: #3a3a3a;
+  font-size: 18px;
+  font-family: 'PFDinTextPro-Thin';
+  letter-spacing: 0.025em; }
+
+.building-section_big .building-section__lower .building-section__brick_1 {
+  width: 213px; }
+
+.building-section_big .building-section__upper {
+  height: 7px;
+  position: relative; }
+  .building-section_big .building-section__upper .building-section__brick {
+    position: absolute; }
+    .building-section_big .building-section__upper .building-section__brick_2 {
+      right: 5px;
+      width: 200px; }
+    .building-section_big .building-section__upper .building-section__brick_3 {
+      top: -3px;
+      right: 8px;
+      width: 190px; }
+    .building-section_big .building-section__upper .building-section__brick_4 {
+      top: -6px;
+      right: 13px;
+      width: 180px; }
+
+.building-section_small {
+  margin-right: 20px; }
+  .building-section_small .building-section__upper {
+    height: 7px;
+    position: relative; }
+    .building-section_small .building-section__upper .building-section__brick {
+      position: absolute; }
+      .building-section_small .building-section__upper .building-section__brick_2 {
+        right: 5px;
+        width: 84px; }
+      .building-section_small .building-section__upper .building-section__brick_3 {
+        top: -3px;
+        right: 8px;
+        width: 75px; }
+      .building-section_small .building-section__upper .building-section__brick_4 {
+        top: -6px;
+        right: 13px;
+        width: 65px; }
+  .building-section_small .building-section__lower .building-section__brick_1 {
+    width: 95px; }
+
+.building-section__lower {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.building-section__brick {
+  background: #b2def4; }
+  .building-section__brick_1 {
+    height: 9px;
+    margin-top: -1px;
+    background: #b2def4; }
+  .building-section__brick_2 {
+    height: 7px;
+    background: #b2def4; }
+  .building-section__brick_3 {
+    background: #fff;
+    height: 2px;
+    border: 1px solid #b2def4; }
+  .building-section__brick_4 {
+    height: 3px;
+    background: #b2def4; }
+
 .building-apartments {
   border-color: #0093da;
   width: 100%;
   max-width: 100%;
-  margin-bottom: 1rem;
   border-collapse: collapse;
   border-color: #b2def4; }
+  .building-apartments tr:last-child td {
+    border-bottom: none; }
   .building-apartments th, .building-apartments td {
     padding: 1px 9px;
     border-width: 1px;
@@ -1972,6 +2045,15 @@ table td.status-info__progress {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .filter__item_buildings {
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #b2def4;
+    -ms-flex-align: end;
+        align-items: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
 
 .filter__rooms {
   -webkit-user-select: none;
@@ -2111,6 +2193,9 @@ table td.status-info__progress {
     text-decoration: none;
     cursor: pointer;
     border-radius: 20px; }
+    .select-menu__label:hover {
+      background: #0093da;
+      color: #fff; }
     .select-menu__label_active {
       background: #0093da;
       color: #fff; }

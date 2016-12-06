@@ -17,6 +17,14 @@
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
+    &_buildings {
+      max-width: 430px;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 1px solid #b2def4;
+      align-items: flex-end;
+      justify-content: space-around;
+    }
   }
   &__rooms {
     user-select: none;

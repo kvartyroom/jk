@@ -62,6 +62,10 @@
     }
   }
   &__label {
+    &:hover {
+      background: $blue;
+      color: #fff;
+    }
     display: block;
     font-size: 18px;
     color: #3a3a3a;
