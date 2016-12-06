@@ -1,0 +1,82 @@
++section.filter
+  +e.wrap
+    +b.H1.title._size_l.__title
+      | Все квартиры
+    +e.SPAN.divider._blue
+    +b.filter
+      +e.row
+        +e.item.discounts-block
+          +b.BUTTON.button._theme_jk._size_s._view_discount
+            +e.content
+              +e.SPAN.count
+                | 15%
+              +e.SPAN.text
+                | военная ипотека
+          +b.BUTTON.button._theme_jk._size_s._view_discount
+            +e.SPAN.text
+              | машиноместо в подарок
+          +b.BUTTON.button._theme_jk._size_s._view_discount
+            +e.content
+              +e.SPAN.count
+                | 0%
+              +e.SPAN.text
+                | рассрочка при строительстве
+      +e.row
+        +e.item
+          +button()._theme_jk._size_m._view_blue.__building
+            | Корпус 1
+          +button()._theme_jk._size_m._view_blue.__building
+            | Корпус 2
+          +button()._theme_jk._size_m._view_blue.__building
+            | Корпус 3
+          +button()._theme_jk._size_m._view_blue.__building
+            | Корпус 4
+          +button()._theme_jk._size_m._view_blue.__building
+            | Корпус 5
+          +b.select-menu
+            +e.header
+              +e.SPAN.title
+                | Все корпуса
+              +e.BUTTON.button
+                +e.SPAN.icon
+            +e.body
+              +e.LABEL.label(for='opt1')
+                | Корпус 1
+                +e.INPUT.input(type='radio' name='drop' value='Корпус 1' id='opt1')
+              +e.LABEL.label(for='opt2')
+                | Корпус 2
+                +e.INPUT.input(type='radio' name='drop' value='Корпус 2' id='opt2')
+              +e.LABEL.label(for='opt3')
+                | Корпус 3
+                +e.INPUT.input(type='radio' name='drop' value='Корпус 3' id='opt3')
+              +e.LABEL.label(for='opt4')
+                | Корпус 4
+                +e.INPUT.input(type='radio' name='drop' value='Корпус 4' id='opt4')
+      +e.row
+        +e.item
+          +e.rooms
+            +e.head
+              | Комнатность
+            +e.room._active
+              | Ст
+            +e.room
+              | 1
+            +e.room
+              | 2
+            +e.room
+              | 3
+            +e.room
+              | 4
+            +e.room
+              | 5
+
+        +e.item
+          +e.wrap
+            +e.head
+              | Площадь, кв.м
+            +e.slider._square#sliderSquare
+        +e.item
+          +e.wrap
+            +e.head
+              | Площадь, млн. руб.
+            +e.slider._price#sliderPrice

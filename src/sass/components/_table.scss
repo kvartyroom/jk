@@ -69,3 +69,53 @@
     }
   }
 }
+
+table td.status-info__discounts,
+table td.status-info__view,
+table td.status-info__progress {
+  text-align: left;
+}
+
+.status-info {
+
+  &__icon {
+    margin-right: 15px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    &_discount {
+      background-image: url('../img/icons/tags/discounts.png');
+      width: 28px;
+      height: 28px;
+    }
+    &_2d {
+      width: 31px;
+      height: 19px;
+      background-image: url('../img/icons/tags/2d.png');
+    }
+    &_3d {
+      width: 31px;
+      height: 19px;
+      background-image: url('../img/icons/tags/3d.png');
+    }
+    &_panoramic {
+      width: 26px;
+      height: 19px;
+      background-image: url('../img/icons/tags/camera.png');
+    }
+    &_key {
+      width: 29px;
+      height: 22px;
+      background-image: url('../img/icons/tags/key.png');
+    }
+    &_forest {
+      width: 34px;
+      height: 25px;
+      background-image: url('../img/icons/tags/forest.png');
+    }
+    &_roller {
+      width: 19px;
+      height: 23px;
+      background-image: url('../img/icons/tags/roller.png');
+    }
+  }
+}

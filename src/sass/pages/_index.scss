@@ -5,6 +5,9 @@
   max-width: 980px;
   justify-content: space-between;
   align-items: center;
+  &_info {
+    align-items: flex-start;
+  }
   &__right,
   &__left {
     display: flex;
@@ -50,6 +53,10 @@
     background: #ffc300;
     width: 164px;
     height: 2px;
+    &_blue {
+      background: $blue;
+      width: 86px;
+    }
   }
 }
 

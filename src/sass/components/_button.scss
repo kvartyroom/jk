@@ -61,6 +61,7 @@
     }
     &.button_size {
       &_s {
+        font-size: 1.4rem;
         .button__text {
 
         }
@@ -92,6 +93,14 @@
               background-image: url('../img/icons/doc-white.png');
             }
           }
+        }
+      }
+      &_blue {
+        background: transparent;
+        color: #3a3a3a;
+        border-color: $blue;
+        .button__text {
+          min-width: 124px;
         }
       }
       &_plain {
@@ -132,6 +141,33 @@
         }
         .num {
           color: #0093da;
+        }
+      }
+      &_discount {
+        border-color: #3a3a3a;
+        color: #3a3a3a;
+        background-color: transparent;
+        .button__content {
+          margin: 4px 32px;
+          .button__count {
+            vertical-align: middle;
+          }
+          .button__count + .button__text {
+            max-width: 125px;
+            white-space: pre-wrap;
+            vertical-align: middle;
+            margin: 0;
+          }
+        }
+        .button__text {
+          margin: 18px 32px;
+          text-transform: uppercase;
+        }
+        .button__count {
+          display: inline-block;
+          margin-right: 6px;
+          font-size: 34px;
+          font-family: 'PFDinTextPro-Medium';
         }
       }
       &_tag {

@@ -28,12 +28,25 @@
     color: #000;
     text-align: center;
     letter-spacing: 0.025em;
-    font-size: 18px;
     font-family: 'PFDinTextPro-Thin';
+    &_size {
+      &_s {
+        font-size: 18px;
+      }
+      &_m {
+        font-size: 20px;
+        line-height: 29px;
+      }
+    }
 
     &_complex {
       margin: 0 auto;
       max-width: 1184px;
+    }
+    &_info {
+      color: #3a3a3a;
+      margin: 0 auto;
+      max-width: 1100px;
     }
   }
   &__divider {
@@ -56,11 +69,15 @@
   &_apartment {
     padding-bottom: 25px;
   }
+  &_info {
+    padding-bottom: 90px;
+  }
   &_communication {
     overflow: hidden;
   }
   &_apartment,
-  &_communication {
+  &_communication,
+  &_info {
     position: relative;
 
     &::before {
@@ -123,5 +140,19 @@
   }
   &_album {
     padding-bottom: 20px;
+  }
+  &__results-table {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__terms {
+    margin-top: 15px;
+    text-align: left;
+    font-family: 'PFDinTextPro-Thin';
+    font-size: 14px;
+    .asterisk {
+      vertical-align: super;
+    }
   }
 }

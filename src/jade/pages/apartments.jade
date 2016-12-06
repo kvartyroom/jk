@@ -1,0 +1,14 @@
+extends ../components/layout/layout
+block head
+  - var pageTitle = 'Все квартиры';
+  - var pageDescription = ''
+block content
+  +b.page._apartments
+    include ../components/header/header
+    include ../components/section/section
+    include ../components/button/button
+    +e.MAIN.content
+      include ../sections/all-apartment/filter
+      include ../sections/all-apartment/results
+      include ../sections/all-apartment/info
+    include ../components/footer/footer

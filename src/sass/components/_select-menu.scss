@@ -1,0 +1,82 @@
+.select-menu {
+  position: relative;
+  min-width: 165px;
+  &__header {
+    z-index: 20;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid $blue;
+    border-radius: 30px;
+  }
+  &__title {
+    display: block;
+    padding: 8px 0 8px 32px;
+    font-family: 'PFDinTextPro-Light';
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    color: #3a3a3a;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+  }
+  &__button {
+    cursor: pointer;
+    position: relative;
+    width: 26px;
+    margin-right: 10px;
+    padding: 0;
+    display: block;
+    border: none;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+  }
+  &__icon {
+    @include centerer;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #e4e4e4;
+  }
+  &__body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    padding-top: 38px;
+    border: 1px solid $blue;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: 2;
+    width: calc(100% - 2px);
+    background: #fff;
+    color: #3a3a3a;
+    &_open {
+      visibility: visible;
+    }
+  }
+  &__label {
+    display: block;
+    font-size: 18px;
+    color: #3a3a3a;
+    font-family: 'PFDinTextPro-Light';
+    font-size: 18px;
+    padding: 9px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 20px;
+    &_active {
+      background: $blue;
+      color: #fff;
+    }
+  }
+  &__input {
+    display: none;
+  }
+}
