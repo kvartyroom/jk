@@ -1088,6 +1088,57 @@ img {
   margin-left: auto;
   margin-right: auto; }
 
+.building-apartments {
+  border-color: #0093da;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  border-color: #b2def4; }
+  .building-apartments th, .building-apartments td {
+    padding: 1px 9px;
+    border-width: 1px;
+    border-style: solid;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 12px;
+    font-family: 'PFDinTextPro-Thin';
+    letter-spacing: 0.025em; }
+  .building-apartments td {
+    cursor: pointer;
+    border-color: #7cc7ec; }
+    .building-apartments td:hover {
+      background-color: #b2def4; }
+    .building-apartments td.building-apartments__empty {
+      position: relative; }
+      .building-apartments td.building-apartments__empty:hover {
+        background: none; }
+      .building-apartments td.building-apartments__empty::before {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+        background: #b2def4;
+        width: 14px;
+        height: 9px; }
+      .building-apartments td.building-apartments__empty::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        content: '';
+        width: 4px;
+        height: 9px;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff; }
+  .building-apartments th {
+    text-align: right;
+    border-color: transparent;
+    border-right-color: #b2def4; }
+
 .button {
   -ms-touch-action: manipulation;
       touch-action: manipulation; }

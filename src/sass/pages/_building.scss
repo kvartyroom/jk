@@ -1,0 +1,53 @@
+.building-apartments {
+  border-color: $blue;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  border-color: #b2def4;
+  th, td {
+    padding: 1px 9px;
+    border-width: 1px;
+    border-style: solid;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 12px;
+    font-family: 'PFDinTextPro-Thin';
+    letter-spacing: 0.025em;
+  }
+  td {
+    cursor: pointer;
+    border-color: #7cc7ec;
+    &:hover {
+      background-color: #b2def4;
+    }
+    &.building-apartments__empty {
+      &:hover {
+        background: none;
+      }
+      position: relative;
+      &::before {
+        display: block;
+        @include centerer;
+        content: '';
+        background: #b2def4;
+        width: 14px;
+        height: 9px;
+      }
+      &::after {
+        @include centerer;
+        display: block;
+        content: '';
+        width: 4px;
+        height: 9px;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+      }
+    }
+  }
+  th {
+    text-align: right;
+    border-color: transparent;
+    border-right-color: #b2def4;
+  }
+}

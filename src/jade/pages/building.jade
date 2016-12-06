@@ -1,0 +1,12 @@
+extends ../components/layout/layout
+block head
+  - var pageTitle = 'Квартиры в корпусе';
+  - var pageDescription = ''
+block content
+  +b.page._building
+    include ../components/header/header
+    include ../components/section/section
+    include ../components/button/button
+    +e.MAIN.content
+      include ../sections/building/filter
+    include ../components/footer/footer
