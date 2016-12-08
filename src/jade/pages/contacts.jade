@@ -1,0 +1,13 @@
+extends ../components/layout/layout
+block head
+  - var pageTitle = 'Контакты';
+  - var pageDescription = ''
+block content
+  +b.page._building
+    include ../components/header/header
+    include ../components/section/section
+    include ../components/button/button
+    +e.MAIN.content
+      include ../sections/contacts/map
+    include ../components/footer/footer
+  script(src='https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ulclIlO0e1hBtlAL1PrJQiqaKNVdVB7B&amp;width=100%25&amp;height=660&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=map' charset='utf-8' async)

@@ -1255,6 +1255,15 @@ img {
     font-size: 18px;
     font-family: 'PFDinTextPro-Thin'; }
 
+.map {
+  margin-top: 20px; }
+  .map__routes {
+    position: absolute;
+    z-index: 9999;
+    top: 47%;
+    right: 22px;
+    max-width: 362px; }
+
 .button {
   -ms-touch-action: manipulation;
       touch-action: manipulation; }
@@ -2283,6 +2292,58 @@ table td.status-info__progress {
       color: #fff; }
   .select-menu__input {
     display: none; }
+
+.tabs {
+  border: 1px solid #26a1d2; }
+  .tabs__wrap {
+    margin: 6px;
+    padding: 20px 18px;
+    background: rgba(255, 255, 255, 0.8); }
+  .tabs__list {
+    margin: 0;
+    text-align: left;
+    padding-left: 0;
+    list-style-type: none; }
+  .tabs__title {
+    display: inline-block;
+    margin-right: 9px;
+    text-align: center; }
+    .tabs__title:nth-child(1) .tabs__link {
+      background-image: url("../img/icons/car-3.png");
+      background-size: 16px 14px;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .tabs__title:nth-child(2) .tabs__link {
+      background-image: url("../img/icons/bus.png");
+      background-size: 16px 18px;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .tabs__title_active .tabs__link {
+      background: #0093da;
+      border-color: transparent; }
+    .tabs__title_active:nth-child(1) .tabs__link {
+      background-image: url("../img/icons/car-2.png"); }
+    .tabs__title_active:nth-child(2) .tabs__link {
+      background-image: url("../img/icons/bus-2.png"); }
+  .tabs__link {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    background: #fff;
+    border: 1px solid #0093da; }
+  .tabs__content {
+    display: none;
+    padding-bottom: 38px; }
+    .tabs__content_active {
+      display: block; }
+  .tabs__text {
+    margin-top: 6px;
+    text-align: left;
+    color: #3a3a3a;
+    letter-spacing: 0.025em;
+    font-size: 16px;
+    font-family: 'PFDinTextPro-Thin'; }
 
 /**
  * Owl Carousel v2.2.0

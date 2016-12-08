@@ -54,6 +54,19 @@ $(document).ready(function() {
     $('.select-menu__title').text(value);
   });
 
+  var tabs = $('.tabs');
+  $('.tabs__list li').on('click', function(event) {
+    var oldTab = $('.tabs__list .tabs__title_active');
+    oldTab.children().attr('aria-selected', 'false');
+    $('.tabs__list > li').removeClass('tabs__title_active');
+    $('.tabs__body .tabs__content').removeClass('tabs__content_active');
+
+    $(this).addClass('tabs__title_active');
+    $(this).children().attr('aria-selected', 'true');
+    var currTab = $(this).children().attr('href');
+    $(currTab).addClass('tabs__content_active');
+  })
+
   var owl = $('.owl-carousel');
   owl.owlCarousel({
     loop:false,

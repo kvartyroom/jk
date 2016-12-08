@@ -1,0 +1,10 @@
+.map {
+  margin-top: 20px;
+  &__routes {
+    position: absolute;
+    z-index: 9999;
+    top: 47%;
+    right: 22px;
+    max-width: 362px;
+  }
+}

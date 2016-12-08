@@ -1,0 +1,21 @@
++section._map
+  +e.wrap
+    +b.H1.title._size_l.__title
+      | Контакты
+    +e.SPAN.divider._blue
+    +b.map#map
+      +b.tabs.__routes
+        +e.wrap
+          +e.head
+            +e.UL.list(data-tab role='tablist')
+              +e.LI.title._active(role='presentation')
+                +e.A.link(href='#panel-1' aria-selected='true' aria-controls='panel-1' role='tab')
+              +e.LI.title(role='presentation')
+                +e.A.link(href='#panel-2' aria-selected='false' aria-controls='panel-2' role='tab')
+          +e.body
+            +e.SECTION.content._active(role='tabpanel')#panel-1
+              +e.P.text
+                | Добраться до жилого комплекса "Центр-2" на личном автомобиле от МКАД можно по Носовихинскому шоссе, двигаясь по нему до пересечения с улицей Пролетарской в городе Железнодорожный. Повернув на нее, двигаться до поворота на улицу Автозаводскую, на которой и располагается комплекс. Этот путь займет 10 минут.
+            +e.SECTION.content(role='tabpanel')#panel-2
+              +e.P.text
+                | Добраться до жилого комплекса "Центр-2" на автобусе от МКАД можно по Носовихинскому шоссе, двигаясь по нему до пересечения с улицей Пролетарской в городе Железнодорожный. Повернув на нее, двигаться до поворота на улицу Автозаводскую, на которой и располагается комплекс. Этот путь займет 30 минут.
