@@ -971,8 +971,7 @@ img {
     margin-left: auto;
     max-width: 1056px; }
   .apartment__list {
-    margin: 42px auto 0;
-    max-width: 1190px; }
+    margin: 42px auto 0; }
   .apartment__list-title {
     margin-bottom: 24px;
     color: #3a3a3a;
@@ -1212,6 +1211,50 @@ img {
     border-color: transparent;
     border-right-color: #b2def4; }
 
+.table.table_striped.table_no-border.table_mortgage {
+  margin-bottom: 30px; }
+  .table.table_striped.table_no-border.table_mortgage th, .table.table_striped.table_no-border.table_mortgage td {
+    font-size: 16px;
+    font-family: 'PFDinTextPro-Light'; }
+  .table.table_striped.table_no-border.table_mortgage th {
+    padding: 1.6rem 1rem;
+    text-transform: uppercase; }
+  .table.table_striped.table_no-border.table_mortgage td {
+    padding: 1.6rem 0; }
+    .table.table_striped.table_no-border.table_mortgage td:nth-child(2) {
+      text-transform: uppercase; }
+    .table.table_striped.table_no-border.table_mortgage td:nth-child(6) {
+      font-size: 14px;
+      font-family: 'PFDinTextPro-Thin'; }
+
+.military-features {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center;
+  margin-bottom: 16px; }
+  .military-features__item {
+    max-width: 220px; }
+  .military-features__img {
+    display: block;
+    margin: 0 auto; }
+  .military-features__title {
+    display: block;
+    margin-top: 12px;
+    color: #3a3a3a;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Light'; }
+  .military-features__description {
+    display: block;
+    margin-top: 10px;
+    color: #3a3a3a;
+    letter-spacing: 0.025em;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Thin'; }
+
 .button {
   -ms-touch-action: manipulation;
       touch-action: manipulation; }
@@ -1443,6 +1486,10 @@ img {
     max-width: 1280px;
     height: 100%;
     text-align: center; }
+  .section__container {
+    max-width: 1090px;
+    margin-left: auto;
+    margin-right: auto; }
   .section__inner {
     position: relative;
     height: 100%; }
@@ -1452,9 +1499,18 @@ img {
     .section__title b {
       text-transform: lowercase;
       font-weight: 400; }
+  .section__list {
+    margin-top: 0;
+    padding-left: 18px; }
+    .section__list li {
+      text-align: left;
+      font-size: 18px;
+      color: #3a3a3a;
+      letter-spacing: 0.025em;
+      font-family: 'PFDinTextPro-Thin'; }
   .section__text {
-    color: #000;
-    text-align: center;
+    margin: 0;
+    color: #3a3a3a;
     letter-spacing: 0.025em;
     font-family: 'PFDinTextPro-Thin'; }
     .section__text_size_s {
@@ -1462,6 +1518,12 @@ img {
     .section__text_size_m {
       font-size: 20px;
       line-height: 29px; }
+    .section__text_left {
+      text-align: left; }
+    .section__text_center {
+      text-align: center; }
+    .section__text_right {
+      text-align: right; }
     .section__text_complex {
       margin: 0 auto;
       max-width: 1184px; }
@@ -1542,7 +1604,7 @@ img {
   .section_album {
     padding-bottom: 20px; }
   .section__results-table {
-    max-width: 1110px;
+    max-width: 1090px;
     margin-left: auto;
     margin-right: auto; }
   .section__terms {
@@ -1552,6 +1614,8 @@ img {
     font-size: 14px; }
     .section__terms .asterisk {
       vertical-align: super; }
+  .section_payment {
+    padding-bottom: 28px; }
 
 .header__wrap {
   box-sizing: border-box;
@@ -1653,13 +1717,24 @@ img {
   font-weight: 400;
   font-family: 'PFDinTextPro-Regular';
   letter-spacing: 0.025em;
-  color: #000; }
+  color: #3a3a3a; }
   .title_size_m {
     font-size: 30px; }
   .title_size_l {
     font-size: 36px; }
   .title_v2 {
     color: #fff; }
+
+.subtitle {
+  margin: 16px 0;
+  color: #3a3a3a;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-family: 'PFDinTextPro-Thin'; }
+  .subtitle_size_m {
+    font-size: 30px; }
 
 .icon {
   display: inline-block;
@@ -1933,24 +2008,25 @@ img {
       word-break: break-word; }
 
 .table {
-  width: 100%;
-  max-width: 100%;
   margin-bottom: 1rem;
+  max-width: 100%;
+  width: 100%;
   border-collapse: collapse; }
   .table td, .table th {
-    font-weight: normal;
     padding: 1rem 0;
-    vertical-align: top;
     border-bottom: 1px solid #0093da;
-    font-family: 'PFDinTextPro-Thin';
-    text-align: center; }
+    color: #3a3a3a;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'PFDinTextPro-Thin'; }
   .table th {
     font-size: 20px; }
   .table td {
     font-size: 18px; }
   .table thead {
-    vertical-align: bottom;
-    border-bottom: 2px solid #0093da; }
+    border-bottom: 2px solid #0093da;
+    vertical-align: bottom; }
   .table_striped thead th {
     background-color: #e5f4fb; }
   .table_striped tr:nth-of-type(even) {
@@ -1960,28 +2036,34 @@ img {
   .table_no-border td, .table_no-border th {
     border-bottom: none; }
   .table__filter-block {
-    margin-left: 8px;
     display: inline-block;
-    vertical-align: middle; }
+    margin-left: 8px;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0; }
+  .table__col_sortable {
+    position: relative; }
   .table__filter {
     display: block; }
     .table__filter_asc {
-      cursor: pointer;
       margin-bottom: 4px;
       width: 0px;
       height: 0px;
-      border-left: 5px solid transparent;
       border-right: 5px solid transparent;
-      border-bottom: 8px solid #cddce3; }
+      border-bottom: 8px solid #cddce3;
+      border-left: 5px solid transparent;
+      cursor: pointer; }
       .table__filter_asc.table__filter_active {
         border-bottom-color: #0093da; }
     .table__filter_desc {
-      cursor: pointer;
       width: 0px;
       height: 0px;
-      border-left: 5px solid transparent;
+      border-top: 8px solid #cddce3;
       border-right: 5px solid transparent;
-      border-top: 8px solid #cddce3; }
+      border-left: 5px solid transparent;
+      cursor: pointer; }
       .table__filter_desc.table__filter_active {
         border-top-color: #0093da; }
 
@@ -1991,13 +2073,13 @@ table td.status-info__progress {
   text-align: left; }
 
 .status-info__icon {
-  margin-right: 15px;
   display: inline-block;
+  margin-right: 15px;
   background-repeat: no-repeat; }
   .status-info__icon_discount {
-    background-image: url("../img/icons/tags/discounts.png");
     width: 28px;
-    height: 28px; }
+    height: 28px;
+    background-image: url("../img/icons/tags/discounts.png"); }
   .status-info__icon_2d {
     width: 31px;
     height: 19px;
@@ -2029,7 +2111,7 @@ table td.status-info__progress {
   -ms-flex-pack: justify;
       justify-content: space-between;
   margin: 0 auto 28px;
-  max-width: 1110px; }
+  max-width: 1090px; }
   .filter__row:nth-child(1) {
     margin-top: 24px; }
 

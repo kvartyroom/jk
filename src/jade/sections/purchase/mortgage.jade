@@ -1,0 +1,45 @@
++section._mortgage
+  +e.wrap
+    +e.container
+      +b.H1.title._size_l.__title
+        | Условия покупки
+      +e.SPAN.divider._blue
+      +b.H2.subtitle._size_m
+        | Ипотека
+      +b.TABLE.table._striped._no-border._mortgage
+        +e.THEAD
+          +e.TR
+            +e.TH
+            +e.TH
+              | Наименование банка
+            +e.TH.col._sortable
+              | Первоначальный взнос
+              +e.SPAN.filter-block
+                +e.SPAN.filter._asc
+                +e.SPAN.filter._desc._active
+            +e.TH.col._sortable
+              | Процентная ставка
+              +e.SPAN.filter-block
+                +e.SPAN.filter._asc
+                +e.SPAN.filter._desc._active
+            +e.TH
+              | Срок кредитования
+            +e.TH
+              | Требования к заемщику
+        tbody
+          each val, i in [1, 2, 3, 4, 5, 6, 7, 8]
+            tr
+              td
+                img(src='img/pages/purchase/#{i+1}.png')
+              td
+                | Тинькофф Банк
+              td
+                | От 45%
+              td
+                | От 20%
+              td
+                | До 25 лет
+              td
+                | Возраст - от 21 до 70 лет. Регистрация - РФ. Стаж на последнем месте работы - не менее 6 месяцев.
+      +button._theme_jk._size_m._view_plain.__button
+        | Ещё 15 квартир

@@ -8,6 +8,11 @@
     height: 100%;
     text-align: center;
   }
+  &__container {
+    max-width: 1090px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   &__inner {
     position: relative;
     height: 100%;
@@ -24,9 +29,20 @@
   &__subtitle {
 
   }
+  &__list {
+    margin-top: 0;
+    padding-left: 18px;
+    li {
+      text-align: left;
+      font-size: 18px;
+      color: #3a3a3a;
+      letter-spacing: 0.025em;
+      font-family: 'PFDinTextPro-Thin';
+    }
+  }
   &__text {
-    color: #000;
-    text-align: center;
+    margin: 0;
+    color: #3a3a3a;
     letter-spacing: 0.025em;
     font-family: 'PFDinTextPro-Thin';
     &_size {
@@ -37,6 +53,15 @@
         font-size: 20px;
         line-height: 29px;
       }
+    }
+    &_left {
+      text-align: left;
+    }
+    &_center {
+      text-align: center;
+    }
+    &_right {
+      text-align: right;
     }
 
     &_complex {
@@ -142,7 +167,7 @@
     padding-bottom: 20px;
   }
   &__results-table {
-    max-width: 1110px;
+    max-width: 1090px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -154,5 +179,8 @@
     .asterisk {
       vertical-align: super;
     }
+  }
+  &_payment {
+    padding-bottom: 28px;
   }
 }

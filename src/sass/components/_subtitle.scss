@@ -1,9 +1,17 @@
 .subtitle {
+  margin: 16px 0;
+  color: #3a3a3a;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-family: 'PFDinTextPro-Thin';
+
   &_size {
     &_s {
     }
     &_m {
-
+      font-size: 30px;
     }
     &_l {
     }

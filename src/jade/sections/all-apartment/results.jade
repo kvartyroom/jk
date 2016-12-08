@@ -1,61 +1,62 @@
 +section._results
   +e.wrap
-    +e.results-table
-      +b.TABLE.table._striped._no-border
-        +e.THEAD
-          +e.TR
-            +e.TH
-              | Корпус
-              +e.SPAN.filter-block
-                +e.SPAN.filter._asc
-                +e.SPAN.filter._desc._active
-            +e.TH
-              | Секция
-              +e.SPAN.filter-block
-                +e.SPAN.filter._asc
-                +e.SPAN.filter._desc
-            +e.TH
-              | Этаж
-              +e.SPAN.filter-block
-                +e.SPAN.filter._asc
-                +e.SPAN.filter._desc
-            +e.TH
-              | Площадь, м#[span(class='unit') 2]
-              +e.SPAN.filter-block
-                +e.SPAN.filter._asc
-                +e.SPAN.filter._desc
-            +e.TH
-              | Цена, руб.
-              +e.SPAN.filter-block
-                +e.SPAN.filter._asc
-                +e.SPAN.filter._desc
-            +e.TH
-            +e.TH
-            +e.TH
-        tbody
-          each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-            tr
-              td
-                | 1
-              td
-                | 5
-              td
-                | 1
-              td
-                | 12.8
-              td
-                | 3 190 000
-              td.status-info__discounts
-                span.status-info__icon.status-info__icon_discount
-              td.status-info__view
-                span.status-info__icon.status-info__icon_2d
-                span.status-info__icon.status-info__icon_3d
-                span.status-info__icon.status-info__icon_panoramic
-              td.status-info__progress
-                span.status-info__icon.status-info__icon_key
-                span.status-info__icon.status-info__icon_forest
-                span.status-info__icon.status-info__icon_roller
-      +button._theme_jk._size_m._view_plain.__button
-        | Ещё 15 квартир
-      +e.terms
-        | #[span(class='asterisk') *] Цены указаны при условии 100% оплаты. Срок действия цен до 31.10.2016 г.
+    +e.container
+      +e.results-table
+        +b.TABLE.table._striped._no-border
+          +e.THEAD
+            +e.TR
+              +e.TH.col._sortable
+                | Корпус
+                +e.SPAN.filter-block
+                  +e.SPAN.filter._asc
+                  +e.SPAN.filter._desc._active
+              +e.TH.col._sortable
+                | Секция
+                +e.SPAN.filter-block
+                  +e.SPAN.filter._asc
+                  +e.SPAN.filter._desc
+              +e.TH.col._sortable
+                | Этаж
+                +e.SPAN.filter-block
+                  +e.SPAN.filter._asc
+                  +e.SPAN.filter._desc
+              +e.TH.col._sortable
+                | Площадь, м#[span(class='unit') 2]
+                +e.SPAN.filter-block
+                  +e.SPAN.filter._asc
+                  +e.SPAN.filter._desc
+              +e.TH.col._sortable
+                | Цена, руб.
+                +e.SPAN.filter-block
+                  +e.SPAN.filter._asc
+                  +e.SPAN.filter._desc
+              +e.TH
+              +e.TH
+              +e.TH
+          tbody
+            each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+              tr
+                td
+                  | 1
+                td
+                  | 5
+                td
+                  | 1
+                td
+                  | 12.8
+                td
+                  | 3 190 000
+                td.status-info__discounts
+                  span.status-info__icon.status-info__icon_discount
+                td.status-info__view
+                  span.status-info__icon.status-info__icon_2d
+                  span.status-info__icon.status-info__icon_3d
+                  span.status-info__icon.status-info__icon_panoramic
+                td.status-info__progress
+                  span.status-info__icon.status-info__icon_key
+                  span.status-info__icon.status-info__icon_forest
+                  span.status-info__icon.status-info__icon_roller
+        +button._theme_jk._size_m._view_plain.__button
+          | Ещё 15 квартир
+        +e.terms
+          | #[span(class='asterisk') *] Цены указаны при условии 100% оплаты. Срок действия цен до 31.10.2016 г.

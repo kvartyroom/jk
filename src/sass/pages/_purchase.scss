@@ -1,0 +1,53 @@
+.table.table_striped.table_no-border.table_mortgage {
+  margin-bottom: 30px;
+  th, td {
+    font-size: 16px;
+    font-family: 'PFDinTextPro-Light';
+  }
+  th {
+    padding: 1.6rem 1rem;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 1.6rem 0;
+    &:nth-child(2) {
+      text-transform: uppercase;
+    }
+    &:nth-child(6) {
+      font-size: 14px;
+      font-family: 'PFDinTextPro-Thin';
+    }
+  }
+}
+
+.military-features {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 16px;
+
+  &__item {
+    max-width: 220px;
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+  &__title {
+    display: block;
+    margin-top: 12px;
+    color: #3a3a3a;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Light';
+  }
+  &__description {
+    display: block;
+    margin-top: 10px;
+    color: #3a3a3a;
+    letter-spacing: 0.025em;
+    font-size: 18px;
+    font-family: 'PFDinTextPro-Thin';
+  }
+}

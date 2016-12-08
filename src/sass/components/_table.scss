@@ -1,15 +1,17 @@
 .table {
-  width: 100%;
-  max-width: 100%;
   margin-bottom: 1rem;
+  max-width: 100%;
+  width: 100%;
   border-collapse: collapse;
+
   td, th {
-    font-weight: normal;
     padding: 1rem 0;
-    vertical-align: top;
     border-bottom: 1px solid $blue;
-    font-family: 'PFDinTextPro-Thin';
+    color: #3a3a3a;
+    vertical-align: middle;
     text-align: center;
+    font-weight: normal;
+    font-family: 'PFDinTextPro-Thin';
   }
   th {
     font-size: 20px;
@@ -18,8 +20,8 @@
     font-size: 18px;
   }
   thead {
-    vertical-align: bottom;
     border-bottom: 2px solid $blue;
+    vertical-align: bottom;
   }
   &_striped {
     thead th {
@@ -38,31 +40,43 @@
     }
   }
   &__filter-block {
-    margin-left: 8px;
     display: inline-block;
+    margin-left: 8px;
     vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+  &__col {
+    &_sortable {
+      position: relative;
+    }
   }
   &__filter {
     display: block;
+
     &_asc {
-      cursor: pointer;
       margin-bottom: 4px;
       width: 0px;
     	height: 0px;
-    	border-left: 5px solid transparent;
     	border-right: 5px solid transparent;
     	border-bottom: 8px solid #cddce3;
+    	border-left: 5px solid transparent;
+      cursor: pointer;
+
       &.table__filter_active {
         border-bottom-color: #0093da;
       }
     }
     &_desc {
-      cursor: pointer;
       width: 0px;
     	height: 0px;
-      border-left: 5px solid transparent;
-    	border-right: 5px solid transparent;
     	border-top: 8px solid #cddce3;
+    	border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      cursor: pointer;
+
       &.table__filter_active {
         border-top-color: #0093da;
       }
@@ -77,15 +91,15 @@ table td.status-info__progress {
 }
 
 .status-info {
-
   &__icon {
-    margin-right: 15px;
     display: inline-block;
+    margin-right: 15px;
     background-repeat: no-repeat;
+
     &_discount {
-      background-image: url('../img/icons/tags/discounts.png');
       width: 28px;
       height: 28px;
+      background-image: url('../img/icons/tags/discounts.png');
     }
     &_2d {
       width: 31px;

@@ -1,112 +1,113 @@
 +section._tth
   +e.wrap
-    +b.apartment
-      +e.wrap
-        +e.tth
-          +e.left-col
-            +b.preview
-              +e.IMG.plan(src='img/pages/apartment/plan.jpg')
-              +e.modes
-                +e.mode._2d
-                +e.mode._3d
-                +e.mode._panoramic
-                +e.mode._video
-          +e.right-col
-            +b.props
-              +e.title
-                | 2 комнатный апартамент
-              +b.TABLE.table.__info
-                tbody
-                  tr
-                    td
-                      | Жилая площадь
-                    td
-                      | 24,5 м2
-                  tr
-                    td
-                      | Площадь
-                    td
-                      | 35,6 м2
-                  tr
-                    td
-                      | Санузел
-                    td
-                      | совм. и разд.
-                  tr
-                    td
-                      | Площадь комнат
-                    td
-                      | по запросу
-              +b.tags
-                +button()._theme_jk._size_m._view_tag
-                  | высота потолков: 2,9 м
-                +button()._theme_jk._size_m._view_tag
-                  | гардеробная
-                +button()._theme_jk._size_m._view_tag
-                  | балкон
-                +button()._theme_jk._size_m._view_tag
-                  | площадь кухни: 9 м2
+    +e.container
+      +b.apartment
+        +e.wrap
+          +e.tth
+            +e.left-col
+              +b.preview
+                +e.IMG.plan(src='img/pages/apartment/plan.jpg')
+                +e.modes
+                  +e.mode._2d
+                  +e.mode._3d
+                  +e.mode._panoramic
+                  +e.mode._video
+            +e.right-col
+              +b.props
+                +e.title
+                  | 2 комнатный апартамент
+                +b.TABLE.table.__info
+                  tbody
+                    tr
+                      td
+                        | Жилая площадь
+                      td
+                        | 24,5 м2
+                    tr
+                      td
+                        | Площадь
+                      td
+                        | 35,6 м2
+                    tr
+                      td
+                        | Санузел
+                      td
+                        | совм. и разд.
+                    tr
+                      td
+                        | Площадь комнат
+                      td
+                        | по запросу
+                +b.tags
+                  +button()._theme_jk._size_m._view_tag
+                    | высота потолков: 2,9 м
+                  +button()._theme_jk._size_m._view_tag
+                    | гардеробная
+                  +button()._theme_jk._size_m._view_tag
+                    | балкон
+                  +button()._theme_jk._size_m._view_tag
+                    | площадь кухни: 9 м2
 
-            +b.price-block
-              +e.SPAN.title
-                | Стоимость
-              +e.SPAN.price
-                | От 14 000 500 руб.
-              +e.docs
-                +link('Условия покупки', '', true)(download)._size_m.__link
-                +link('Скачать в PDF', '', true)(download)._size_m.__link
-            +b.contacts-block
-              +e.left
-                +e.tel
-                  | +7 (495) 456-14-88
-                +e.description
-                  | узнайте о скидках по телефону
-              +e.right
-                +button()._theme_jk._size_m._view_primary._size.__order
-                  | забронировать
-        +e.list
-          +e.list-title
-            | Квартиры подобной планировки
-          +b.TABLE.table._striped._no-border
-            +e.THEAD
-              +e.TR
-                +e.TH
-                  | Корпус
-                  +e.SPAN.filter-block
-                    +e.SPAN.filter._asc
-                    +e.SPAN.filter._desc._active
-                +e.TH
-                  | Секция
-                  +e.SPAN.filter-block
-                    +e.SPAN.filter._asc
-                    +e.SPAN.filter._desc
-                +e.TH
-                  | Этаж
-                  +e.SPAN.filter-block
-                    +e.SPAN.filter._asc
-                    +e.SPAN.filter._desc
-                +e.TH
-                  | Площадь, м#[span(class='unit') 2]
-                  +e.SPAN.filter-block
-                    +e.SPAN.filter._asc
-                    +e.SPAN.filter._desc
-                +e.TH
-                  | Цена, руб.
-                  +e.SPAN.filter-block
-                    +e.SPAN.filter._asc
-                    +e.SPAN.filter._desc
-            +e.TBODY
-              each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+              +b.price-block
+                +e.SPAN.title
+                  | Стоимость
+                +e.SPAN.price
+                  | От 14 000 500 руб.
+                +e.docs
+                  +link('Условия покупки', '', true)(download)._size_m.__link
+                  +link('Скачать в PDF', '', true)(download)._size_m.__link
+              +b.contacts-block
+                +e.left
+                  +e.tel
+                    | +7 (495) 456-14-88
+                  +e.description
+                    | узнайте о скидках по телефону
+                +e.right
+                  +button()._theme_jk._size_m._view_primary._size.__order
+                    | забронировать
+          +e.list
+            +e.list-title
+              | Квартиры подобной планировки
+            +b.TABLE.table._striped._no-border
+              +e.THEAD
                 +e.TR
-                  +e.TD
-                    | 1
-                  +e.TD
-                    | 5
-                  +e.TD
-                    | 1
-                  +e.TD
-                    | 12.8
-                  +e.TD
-                    | 3 190 000
-          +button._theme_jk._size_m._view_plain.__button
-            | Ещё 15 квартир
+                  +e.TH.col._sortable
+                    | Корпус
+                    +e.SPAN.filter-block
+                      +e.SPAN.filter._asc
+                      +e.SPAN.filter._desc._active
+                  +e.TH.col._sortable
+                    | Секция
+                    +e.SPAN.filter-block
+                      +e.SPAN.filter._asc
+                      +e.SPAN.filter._desc
+                  +e.TH.col._sortable
+                    | Этаж
+                    +e.SPAN.filter-block
+                      +e.SPAN.filter._asc
+                      +e.SPAN.filter._desc
+                  +e.TH.col._sortable
+                    | Площадь, м#[span(class='unit') 2]
+                    +e.SPAN.filter-block
+                      +e.SPAN.filter._asc
+                      +e.SPAN.filter._desc
+                  +e.TH.col._sortable
+                    | Цена, руб.
+                    +e.SPAN.filter-block
+                      +e.SPAN.filter._asc
+                      +e.SPAN.filter._desc
+              +e.TBODY
+                each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+                  +e.TR
+                    +e.TD
+                      | 1
+                    +e.TD
+                      | 5
+                    +e.TD
+                      | 1
+                    +e.TD
+                      | 12.8
+                    +e.TD
+                      | 3 190 000
+            +button._theme_jk._size_m._view_plain.__button
+              | Ещё 15 квартир

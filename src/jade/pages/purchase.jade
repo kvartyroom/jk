@@ -1,0 +1,15 @@
+extends ../components/layout/layout
+block head
+  - var pageTitle = 'Условия покупки';
+  - var pageDescription = ''
+block content
+  +b.page._purchase
+    include ../components/header/header
+    include ../components/section/section
+    include ../components/button/button
+    +e.MAIN.content
+      include ../sections/purchase/mortgage
+      include ../sections/purchase/military
+      include ../sections/purchase/installments
+      include ../sections/purchase/payment
+    include ../components/footer/footer
