@@ -1,0 +1,13 @@
+extends ../components/layout/layout
+block head
+  - var pageTitle = 'Текстовая страничка';
+  - var pageDescription = ''
+block content
+  +b.page._text
+    include ../components/header/header
+    include ../components/section/section
+    include ../components/button/button
+    include ../components/input/input
+    +e.MAIN.content
+      include ../sections/text/content
+    include ../components/footer/footer

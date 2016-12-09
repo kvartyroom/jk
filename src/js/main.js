@@ -90,7 +90,7 @@ $(document).ready(function() {
     $(this).toggleClass('placemark-filter__item_checked');
   });
 
-  $('.card__thumb').magnificPopup({
+  $('.card__thumb, .thumbnail').magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
     closeBtnInside: true,

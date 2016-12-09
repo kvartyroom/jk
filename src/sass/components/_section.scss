@@ -183,7 +183,10 @@
   &_payment {
     padding-bottom: 28px;
   }
-  &_map {
-
+  &_content {
+    padding-bottom: 50px;
+  }
+  &__content {
+    @extend %clearfix;
   }
 }

@@ -1,0 +1,38 @@
+.thumbnail {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 9px;
+  max-width: 400px;
+  outline: 0;
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+  &::after {
+    @include centerer;
+
+    display: block;
+    width: 49px;
+    height: 49px;
+    background-image: url('../img/icons/magnifier.png');
+    content: '';
+    opacity: 0;
+  }
+  &_left {
+    float: left;
+    margin-right: 20px;
+  }
+  &_right {
+    float: right;
+    margin-left: 20px;
+  }
+  &_border {
+    border: 1px solid $blue;
+  }
+  &__img {
+
+  }
+}

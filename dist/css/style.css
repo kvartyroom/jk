@@ -407,7 +407,7 @@ body {
 img {
   max-width: 100%; }
 
-.slider__container::after {
+.section__content::after, .slider__container::after {
   content: '';
   display: table;
   clear: both; }
@@ -1626,6 +1626,8 @@ img {
       vertical-align: super; }
   .section_payment {
     padding-bottom: 28px; }
+  .section_content {
+    padding-bottom: 50px; }
 
 .header__wrap {
   box-sizing: border-box;
@@ -2390,6 +2392,35 @@ table td.status-info__progress {
     letter-spacing: 0.025em;
     font-size: 16px;
     font-family: 'PFDinTextPro-Thin'; }
+
+.thumbnail {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 9px;
+  max-width: 400px;
+  outline: 0; }
+  .thumbnail:hover::after {
+    opacity: 1; }
+  .thumbnail::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 49px;
+    height: 49px;
+    background-image: url("../img/icons/magnifier.png");
+    content: '';
+    opacity: 0; }
+  .thumbnail_left {
+    float: left;
+    margin-right: 20px; }
+  .thumbnail_right {
+    float: right;
+    margin-left: 20px; }
+  .thumbnail_border {
+    border: 1px solid #0093da; }
 
 /**
  * Owl Carousel v2.2.0
