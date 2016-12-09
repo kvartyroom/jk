@@ -116,11 +116,11 @@ $(document).ready(function() {
     },
     callbacks: {
       open: function() {
-        // var share = Ya.share2('shareBlock', {
-        //     theme: {
-        //       services: 'facebook,vkontakte'
-        //     }
-        // });
+        var share = Ya.share2('shareBlock', {
+            theme: {
+              services: 'facebook,vkontakte'
+            }
+        });
       },
     }
 	});
@@ -140,11 +140,11 @@ $(document).ready(function() {
     },
     callbacks: {
       open: function() {
-        // var share = Ya.share2('shareBlock', {
-        //     theme: {
-        //       services: 'facebook,vkontakte'
-        //     }
-        // });
+        var share = Ya.share2('shareBlock', {
+            theme: {
+              services: 'facebook,vkontakte'
+            }
+        });
       },
       buildControls: function() {
         this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
