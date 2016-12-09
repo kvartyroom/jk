@@ -1,0 +1,9 @@
+mixin input(placeholder, notDefault)
+  if (notDefault)
+    +b('span').input&attributes(attributes)
+      block
+  else
+    +b('span').input&attributes(attributes)
+      +e('span').box
+        +e.INPUT(placeholder='#{placeholder}').control&attributes(attributes)
+          block

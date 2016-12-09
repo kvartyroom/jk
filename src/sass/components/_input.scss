@@ -1,0 +1,44 @@
+.input {
+  touch-action: manipulation;
+  &_theme_jk {
+    color: #3a3a3a;
+    letter-spacing: 0.025em;
+    font-family: 'PFDinTextPro-Thin';
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border: 1px solid $blue;
+    border-radius: 20px;
+    &.input_size {
+      &_s {
+
+      }
+      &_m {
+        font-size: 16px;
+        .input__control {
+          height: 28px;
+          padding: 18px 30px;
+        }
+      }
+    }
+    .input__control {
+      font: inherit;
+      line-height: inherit;
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 0;
+      width: 100%;
+      border: 0;
+      outline: none;
+      background: none;
+      -webkit-appearance: none;
+    }
+  }
+  &__box {
+    display: block;
+    position: relative;
+    user-select: none;
+  }
+}

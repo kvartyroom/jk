@@ -1256,11 +1256,12 @@ img {
     font-family: 'PFDinTextPro-Thin'; }
 
 .map {
-  margin-top: 20px; }
+  margin-top: 20px;
+  position: relative; }
   .map__routes {
     position: absolute;
     z-index: 9999;
-    top: 47%;
+    top: 30%;
     right: 22px;
     max-width: 362px; }
 
@@ -1772,6 +1773,44 @@ img {
     background-image: url("../img/icons/magnifier.png");
     width: 49px;
     height: 49px; }
+
+.input {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation; }
+  .input_theme_jk {
+    color: #3a3a3a;
+    letter-spacing: 0.025em;
+    font-family: 'PFDinTextPro-Thin';
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    -webkit-tap-highlight-color: transparent;
+    border: 1px solid #0093da;
+    border-radius: 20px; }
+    .input_theme_jk.input_size_m {
+      font-size: 16px; }
+      .input_theme_jk.input_size_m .input__control {
+        height: 28px;
+        padding: 18px 30px; }
+    .input_theme_jk .input__control {
+      font: inherit;
+      line-height: inherit;
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 0;
+      width: 100%;
+      border: 0;
+      outline: none;
+      background: none;
+      -webkit-appearance: none; }
+  .input__box {
+    display: block;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
 
 .link {
   cursor: pointer;
@@ -2299,6 +2338,13 @@ table td.status-info__progress {
     margin: 6px;
     padding: 20px 18px;
     background: rgba(255, 255, 255, 0.8); }
+  .tabs__head {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: start;
+        align-items: flex-start; }
   .tabs__list {
     margin: 0;
     text-align: left;
