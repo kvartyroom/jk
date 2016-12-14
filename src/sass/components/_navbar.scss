@@ -1,8 +1,9 @@
 .navbar {
   position: relative;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  height: 90px;
+  padding: 17px 0 12px;
 
   &__left,
   &__center,
@@ -21,13 +22,6 @@
   &__right {
     width: 246px;
   }
-  &__logo {
-    width: 43px;
-    height: 60px;
-    background-image: url('../img/logos/logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
   &__title {
     max-width: 196px;
     text-transform: uppercase;
@@ -36,11 +30,11 @@
     font-family: 'PFDinTextPro-Light';
   }
   &__contacts {
-    align-items: center;
-    text-align: right;
     display: flex;
     justify-content: space-between;
+    margin-top: 4px;
     width: 100%;
+    text-align: right;
   }
   &__tel {
     margin-top: 2px;

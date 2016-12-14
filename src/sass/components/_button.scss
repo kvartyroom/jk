@@ -12,6 +12,7 @@
     background-color: #fff;
     color: #0093da;
     text-align: center;
+    text-decoration: none;
     white-space: nowrap;
     letter-spacing: 0.025em;
     font-weight: 400;
@@ -25,23 +26,20 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &.button_block {
-      background-color: rgba(255, 255, 255, 0.43);
-      font-family: 'PFDinTextPro-Light';
-      font-size: 20px;
-      color: #3a3a3a;
       border-color: #000;
+      background-color: rgba(255, 255, 255, 0.43);
+      color: #3a3a3a;
+      font-size: 20px;
+      font-family: 'PFDinTextPro-Light';
     }
-
     &.button_map.button_size_m {
       top: 5px;
       right: 87px;
     }
-
     &.button_block.button_size_m {
       top: 22px;
       right: 87px;
     }
-
     &.button_map.button_size_m,
     &.button_block.button_size_m {
       position: absolute;
@@ -62,6 +60,7 @@
     &.button_size {
       &_s {
         font-size: 1.4rem;
+
         .button__text {
 
         }
@@ -96,28 +95,31 @@
         }
       }
       &_blue {
+        border-color: $blue;
         background: transparent;
         color: #3a3a3a;
-        border-color: $blue;
+
         .button__text {
           min-width: 124px;
         }
       }
       &_plain {
+        border-color: #3a3a3a;
         background: transparent;
         color: #3a3a3a;
-        border-color: #3a3a3a;
+
         .button__text {
-          min-width: auto;
           margin: 7px 24px;
+          min-width: auto;
         }
       }
       &_primary.button_size_m {
         background: #0093da;
         color: #fff;
+
         .button__text {
-          min-width: auto;
           margin: 7px 16px;
+          min-width: auto;
         }
       }
       &_secondary {
@@ -130,33 +132,22 @@
           color: #3a3a3a;
         }
       }
-      &_rating {
-        border-color: #000;
-        background-color: transparent;
-        color: #000;
-
-        .button__text {
-          margin: 8px 20px;
-          min-width: 130px;
-        }
-        .num {
-          color: #0093da;
-        }
-      }
       &_discount {
         border-color: #3a3a3a;
-        color: #3a3a3a;
         background-color: transparent;
+        color: #3a3a3a;
+
         .button__content {
           margin: 4px 32px;
+
           .button__count {
             vertical-align: middle;
           }
           .button__count + .button__text {
-            max-width: 125px;
-            white-space: pre-wrap;
-            vertical-align: middle;
             margin: 0;
+            max-width: 125px;
+            vertical-align: middle;
+            white-space: pre-wrap;
           }
         }
         .button__text {
@@ -171,12 +162,13 @@
         }
       }
       &_tag {
-        color: #3a3a3a;
-        margin-bottom: 9px;
         margin-right: 9px;
+        margin-bottom: 9px;
+        color: #3a3a3a;
+
         .button__text {
-          min-width: auto;
           margin: 8px 34px;
+          min-width: auto;
         }
       }
     }

@@ -66,4 +66,16 @@
       font-family: 'PFDinTextPro-Light';
     }
   }
+  &__fz-rating {
+    background-color: transparent;
+    font-size: 19px;
+    padding: 8px 38px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    color: #333;
+    font-family: 'PFDinTextPro-Thin';
+    span {
+      color: #0093da;
+    }
+  }
 }
